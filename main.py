@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import requests.compat
+import re
 
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
@@ -25,62 +26,77 @@ for item in a:
 
 
 """
-this block goes from armour page to specific armour page.
-
-- need a way to dynamically compare armour name:
-  - append names to list and use that list instead of hard code. 
+this block goes from armour page to Hope armour page.
+Each individual armour page has link to next or previous armour.
 """
-armour_name = []
-tr_list = new_soup.find_all('tr')
-for item in tr_list:
-  armour_links = item.find_all('a')
+#armour_names = []
 
-  """
-  remove female version as we only want name of armour set.
-  stats, res, def, skills are basically duplicate of male ver.
-  """
-  if item.text != '':
-    armour_name.append(item.text)
+first_armour_link = new_soup.find('tr') \
+                            .find('td') \
+                            .find('a')
 
-  for armour in armour_links:
-    if armour.text == 'Hope' and 'href' in armour.attrs:
-      href = armour['href']
-      print(href)
-      armour_url = requests.compat.urljoin(url, href)
-      print(armour_url)
-      new_res = requests.get(armour_url)
-      print(new_res)
-      new_soup = BeautifulSoup(new_res.text, 'html.parser')
-      break
+if first_armour_link.text == 'Hope' and 'href' in first_armour_link.attrs:
+    href = first_armour_link['href']
+    armour_url = requests.compat.urljoin(url, href)
+    new_res = requests.get(armour_url)
+    new_soup = BeautifulSoup(new_res.text, 'html.parser')
 
-t = new_soup.find('h2')
-print(t)
+tables = new_soup.find_all('tbody')
+t1 = tables[0]    # piece names
+t2 = tables[1]    # piece type + resistances
+t3 = tables[2]    # piece slot info
 
-#armours = []
-
-# for item in tbody.contents:
-#   if item.text == '': continue
-#   print(item.get_text())
-  # armours.append(item.text)
-  #print(item.find_next())
-
-#print(armours)
-
-# armour_name = data[0]
-# armour_type = data[1]   # do some filter / ignore name + resistances + th
-# restances = data[1]     # do some filter / ignore type + name + th
-# slots = data[2]         # ignore type, name, skills
-# skills = data[2]        # ignore type, name, slots
-
-# for item in data[1].contents:
-#   print(item.text)
-
-# for item in data[2].contents:
-#   print(item.text)
+"""
+removes any excess words connected to 2nd word (starting with uppercase).
+ex. 'Hope MaskArmour' -> 'Hope Mask'
+One of the necessary fields for ArmourModel + Schema.
+"""
+armour_pieces = re.findall(r'Hope [A-Z][a-z]+(?=[A-Z])?', t1.text)
+# print(armour_pieces)
 
 
-#print(data[1].prettify())
-#print(ul.prettify())
+"""
+Link to next armour set
+"""
+next_armour = new_soup.find(name='nav', attrs={'role': 'navigation'}) \
+                      .find('ul') \
+                      .find_all('li')[-1].find('a')
+href = next_armour['href']
+next_armour_url = requests.compat.urljoin(url, href)
+new_res = requests.get(next_armour_url)
+new_soup = BeautifulSoup(new_res.text, 'html.parser')
 
+h = new_soup.find('h2')
+print(h)
+
+"""
+old way... redundant now: 
+"""
+#print(tr_list.text)
+# a = tr_list.
+# print(a)
+# for item in tr_list:
+#   armour_links = item.find_all('a')
+
+#   """
+#   remove female version as we only want name of armour set.
+#   stats, res, def, skills are basically duplicate of male ver.
+#   """
+#   if item.text != '':
+#     armour_name.append(item.text)
+
+#   for armour in armour_links:
+#     if armour.text == 'Hope' and 'href' in armour.attrs:
+#       href = armour['href']
+#       print(href)
+#       armour_url = requests.compat.urljoin(url, href)
+#       print(armour_url)
+#       new_res = requests.get(armour_url)
+#       print(new_res)
+#       new_soup = BeautifulSoup(new_res.text, 'html.parser')
+#       break
+
+# t = new_soup.find('h2')
+# print(t)
 
 
