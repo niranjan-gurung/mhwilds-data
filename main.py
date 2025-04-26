@@ -7,12 +7,19 @@ headers = {
   'Content-Type': 'application/json'
 }
 
-skill_data = get_skill_data()
+#skill_data = get_skill_data()
+armour_data = get_armour_data()
+
+# res = requests.post(
+#   'http://localhost:5000/api/skills',
+#   headers=headers,
+#   json=skill_data
+# )
 
 res = requests.post(
-  'http://localhost:5000/api/skills',
+  'http://localhost:5000/api/armours',
   headers=headers,
-  json=skill_data
+  json=armour_data
 )
 
 if res.status_code in[200, 201]:

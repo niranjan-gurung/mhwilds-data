@@ -1,12 +1,39 @@
 from bs4 import BeautifulSoup
 import requests
 import requests.compat
+import re
 
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
 
+def build_skills_lookup(api_base_url='http://localhost:5000/api'):
+  skills_lookup = {}
+  try:
+    response = requests.get(f"{api_base_url}/skills")
+    if response.status_code == 200:
+      skills = response.json()
+      for skill in skills:
+        skills_lookup[skill['name']] = skill['id']
+    return skills_lookup
+  except Exception as e:
+    return e
+  
+def get_skill_rank_data(skill_id, skill_level, api_base_url='http://localhost:5000/api'):
+  try:
+    response = requests.get(f"{api_base_url}/skills/{skill_id}")
+    if response.status_code == 200:
+      skill_data = response.json()
+      for rank in skill_data.get('ranks', []):
+        if rank['level'] == skill_level:
+          return rank['id']
+    return None
+  except Exception as e:
+    return e
+
 def get_armour_data():
+  skills_lookup = build_skills_lookup()
+
   """
   homepage -> armour page
   """
@@ -29,88 +56,117 @@ def get_armour_data():
                               .find('td') \
                               .find('a')
 
+  all_armour_data = []
+
   if first_armour_link.text == 'Hope' and 'href' in first_armour_link.attrs:
     href = first_armour_link['href']
     armour_url = requests.compat.urljoin(url, href)
     new_res = requests.get(armour_url)
     new_soup = BeautifulSoup(new_res.text, 'html.parser')
 
-  tables = new_soup.find_all('tbody')
-  #tables = soup.find_all('tbody')
-  #t1 = tables[0]    # piece names
-  t2 = tables[1]    # piece type + resistances
-  t3 = tables[2]    # piece slot info
+  while True:
+    tables = new_soup.find_all('tbody')
+    t2 = tables[1]    # piece type + resistances
+    t3 = tables[2]    # piece slot info
 
-  # """
-  # removes any excess words connected to 2nd word (starting with uppercase).
-  # ex. 'Hope MaskArmour' -> 'Hope Mask'
-  # One of the necessary fields for ArmourModel + Schema.
-  # """
-  #armour_pieces = re.findall(r'Hope [A-Z][a-z]+(?=[A-Z])?', t1.text)
-  #print(armour_pieces)
+    """
+    uses 2nd and 3rd table structures to extract appropriate data:
+    - name
+    - type
+    - defense
+    - resistances
+    - slots
 
+    builds a armour piece dict object using the above info
+    """
+    data = []
+    rows = t2.find_all('tr')[1:]
 
-  """
-  uses 2nd and 3rd table structures to extract appropriate data:
-  - name
-  - type
-  - defense
-  - resistances
-  - slots
+    for row in rows:
+      td = row.find_all('td')
+      type = td[0].get_text(strip=True)
+      name = td[1].get_text(strip=True)
+      defense = td[2].get_text(strip=True)
+      resistances = {
+        "fire": td[3].get_text(strip=True),
+        "water": td[4].get_text(strip=True),
+        "ice": td[5].get_text(strip=True),
+        "thunder": td[6].get_text(strip=True),
+        "dragon": td[7].get_text(strip=True)
+      }
 
-  builds a armour piece dict object using the above info
-  """
-  data = []
-  rows = t2.find_all('tr')[1:]
-
-  for row in rows:
-    td = row.find_all('td')
-    type = td[0].get_text(strip=True)
-    name = td[1].get_text(strip=True)
-    defense = td[2].get_text(strip=True)
-    resistances = {
-      "fire": td[3].get_text(strip=True),
-      "water": td[4].get_text(strip=True),
-      "ice": td[5].get_text(strip=True),
-      "thunder": td[6].get_text(strip=True),
-      "dragon": td[7].get_text(strip=True)
-    }
-
+      data.append({
+        'name': name,
+        'slug': name.lower().replace(' ', '-'),
+        'type': type.lower(),
+        'rank': 'low',
+        'rarity': 1,
+        'defense': defense,
+        'resistances': resistances,
+        'slots': [],
+        'skills': []
+      })
+      
     """
     this block extracts slots information
     """
     rows = t3.find_all('tr')[1:]
-    for row in rows:
-      td = row.find_all('td')
-      slot_row = td[2].get_text(strip=True) \
-                      .strip('[]')          \
-                      .split('][')
-      slots = [{'level': int(slot)} for slot in slot_row if int(slot) != 0]
 
-    data.append({
-      'name': name,
-      'slug': name.lower().replace(' ', '-'),
-      'type': type.lower(),
-      'rank': 'low',
-      'rarity': 1,
-      'defense': defense,
-      'resistances': resistances,
-      'slots': slots
-    })
+    for i, row in enumerate(rows):
+      if i < len(data):
+        td = row.find_all('td')
+        slot_text = td[2].get_text(strip=True)
+        slot_values = re.findall(r'\[(\d+)\]', slot_text)
+        slots = [{'level': int(slot)} for slot in slot_values if int(slot) != 0]
+        data[i]['slots'] = slots
 
-  return data
-  #print(data)
+        if len(td) > 3 and td[3].get_text(strip=True):
+          skill_name_level = td[3].get_text(strip=True)
 
-  """
-  Link to next armour set
-  """
-  # next_armour = new_soup.find(name='nav', attrs={'role': 'navigation'}) \
-  #                       .find('ul') \
-  #                       .find_all('li')[-1].find('a')
-  # href = next_armour['href']
-  # next_armour_url = requests.compat.urljoin(url, href)
-  # new_res = requests.get(next_armour_url)
-  # new_soup = BeautifulSoup(new_res.text, 'html.parser')
+          match = re.match(r'([a-zA-Z\s]+)\s([\+\-]?\d+)$', skill_name_level.strip())
 
-  # h = new_soup.find('h2')
-  # print(h)
+          if match:
+            skill_name = match.group(1).strip()
+            skill_level = int(match.group(2))
+
+          skill_id = skills_lookup.get(skill_name)
+
+          if skill_id:
+            skill_rank_id = get_skill_rank_data(skill_id, skill_level)
+
+            if skill_rank_id:
+              response = requests.get(f'http://localhost:5000/api/skills/{skill_id}')
+              if response.status_code == 200:
+                skill_data = response.json()
+                for rank in skill_data['ranks']:
+                  if rank['level'] == skill_level:
+                    data[i]['skills'].append({
+                      'id': rank['id'],
+                      'level': rank['level'],
+                      'desc': rank['desc'],
+                      'skill_id': skill_id
+                    })
+                  else:
+                    print(f"Rank not found for level {skill_level}")
+            else:
+              print(f"Could not find rank ID for skill: {skill_name} level {skill_level}")
+          else:
+            print(f"Unknown skill: {skill_name}")
+
+    all_armour_data.extend(data)
+
+    """
+    Link to next armour set
+    """
+    next_armour = new_soup.find(name='nav', attrs={'role': 'navigation'}) \
+                          .find('ul') \
+                          .find_all('li')[-1].find('a')
+    
+    if next_armour and 'href' in next_armour.attrs:
+      href = next_armour['href']
+      next_armour_url = requests.compat.urljoin(url, href)
+      new_res = requests.get(next_armour_url)
+      new_soup = BeautifulSoup(new_res.text, 'html.parser')
+    else:
+      break
+  return all_armour_data
