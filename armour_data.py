@@ -57,6 +57,8 @@ def get_armour_data():
                               .find('a')
 
   all_armour_data = []
+  rank = 'low'    # track rank transition
+  rarity = 1
 
   if first_armour_link.text == 'Hope' and 'href' in first_armour_link.attrs:
     href = first_armour_link['href']
@@ -95,12 +97,32 @@ def get_armour_data():
         "dragon": td[7].get_text(strip=True)
       }
 
+      """
+      rank + rarity not listed on website so
+      manual change required:
+      """
+      if name == 'Conga Helm':
+        rarity = 2
+      if name == 'Ingot Helm':
+        rarity = 3
+      if name == 'G. Seikret Coil':
+        rarity = 4
+      if name == 'Hope Mask \u03b1':
+        rank = 'high'
+        rarity = 5
+      if name == 'Ingot Helm \u03b1':
+        rarity = 6
+      if name == 'Dober Helm \u03b1':
+        rarity = 7
+      if name == 'Arkvulcan Helm \u03b1':
+        rarity = 8
+
       data.append({
         'name': name,
-        'slug': name.lower().replace(' ', '-'),
+        'slug': name.lower().replace(' ', '-').replace('.', ''),
         'type': type.lower(),
-        'rank': 'low',
-        'rarity': 1,
+        'rank': rank,
+        'rarity': rarity,
         'defense': defense,
         'resistances': resistances,
         'slots': [],
@@ -138,12 +160,12 @@ def get_armour_data():
               response = requests.get(f'http://localhost:5000/api/skills/{skill_id}')
               if response.status_code == 200:
                 skill_data = response.json()
-                for rank in skill_data['ranks']:
-                  if rank['level'] == skill_level:
+                for srank in skill_data['ranks']:
+                  if srank['level'] == skill_level:
                     data[i]['skills'].append({
-                      'id': rank['id'],
-                      'level': rank['level'],
-                      'desc': rank['desc'],
+                      'id': srank['id'],
+                      'level': srank['level'],
+                      'desc': srank['desc'],
                       'skill_id': skill_id
                     })
                   else:
