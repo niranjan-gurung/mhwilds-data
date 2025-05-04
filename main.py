@@ -8,6 +8,7 @@ headers = {
 }
 
 #skill_data = get_skill_data()
+#print(skill_data)
 armour_data = get_armour_data()
 
 # res = requests.post(
