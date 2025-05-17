@@ -1,15 +1,5 @@
-from armour_data import get_armour_data
+from armour_data import post_armour_data
 from skill_data import get_skill_data
-
-import requests
-
-headers = {
-  'Content-Type': 'application/json'
-}
-
-#skill_data = get_skill_data()
-#print(skill_data)
-armour_data = get_armour_data()
 
 # res = requests.post(
 #   'http://localhost:5000/api/skills',
@@ -17,13 +7,4 @@ armour_data = get_armour_data()
 #   json=skill_data
 # )
 
-res = requests.post(
-  'http://localhost:5000/api/armours',
-  headers=headers,
-  json=armour_data
-)
-
-if res.status_code in[200, 201]:
-  print(f'successfully added data: {res}')
-else:
-  print(f'error adding data: {res.status_code} - {res.text}')
+post_armour_data()
