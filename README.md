@@ -5,9 +5,7 @@ A simple and dirty web scraper that grabs game data such as: armours, weapons, s
 Website used as the data source: https://mhwilds.kiranico.com/
 
 TODO:
-- armour data
 - set bonus
 - group skills
 - weapon data
-- charms
 - food skills
