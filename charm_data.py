@@ -66,7 +66,7 @@ def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
   if charm is None:
     charm = {
       'name': name,
-      'rank': []  # empty list for ranks, will fill it below
+      'ranks': []  # empty list for ranks, will fill it below
     }
     data.append(charm)  # add new charm to data
 
@@ -85,10 +85,11 @@ def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
     if skill_id:
       # get skill rank/level based on id: 
       skill_rank = get_skill_rank_data(skill_id, skill_level)
-      # append skill rank info to skill object:
-      charm_rank['skills'].append(skill_rank)
+      if skill_rank:
+        # append skill rank info to skill object:
+        charm_rank['skills'].append(skill_rank)
 
-  charm['rank'].append(charm_rank)
+  charm['ranks'].append(charm_rank)
 
   # navigate to next charm link:
   next_charm = nav.find('ul') \
@@ -165,7 +166,7 @@ def post_charm_data(api_base_url='http://localhost:5000/api'):
       headers=headers
     )
     
-    if response.status_code == 201 or response.status_code == 207:
+    if response.status_code in (200, 201, 207):
       print("Successfully posted charm data!")
       result = response.json()
       if 'errors' in result and result['errors']:
