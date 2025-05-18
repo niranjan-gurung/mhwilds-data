@@ -3,50 +3,11 @@ import requests
 import requests.compat
 import re
 import json
+from util import build_skills_lookup, get_skill_rank_data, parse_skill
 
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
-
-"""
-Builds a dictionary mapping skill names to their IDs from the API
-"""
-def build_skills_lookup(api_base_url='http://localhost:5000/api'):
-  skills_lookup = {}
-  try:
-    response = requests.get(f"{api_base_url}/skills")
-    if response.status_code == 200:
-      skills = response.json()
-      for skill in skills:
-        skills_lookup[skill['name']] = skill['id']
-    return skills_lookup
-  except Exception as e:
-    print(f"Error building skills lookup: {e}")
-    return {}
-  
-"""
-Retrieves the skill rank for a given skill ID and level
-"""
-def get_skill_rank_data(skill_id, skill_level, api_base_url='http://localhost:5000/api'):
-  try:
-    response = requests.get(f"{api_base_url}/skills/{skill_id}")
-    if response.status_code == 200:
-      skill_data = response.json()
-      for rank in skill_data.get('ranks', []):
-        if rank['level'] == skill_level:
-          return rank   # from ranks list: get rank object that matches 'skill_level'
-    return None
-  except Exception as e:
-    print(f"Error getting skill rank data: {e}")
-    return None
-
-def parse_skill(skill_string) -> tuple:
-  match = re.match(r'(.+)\s\+(\d+)', skill_string)
-  if match:
-    skill_name = match.group(1)         # extract skill name (str)
-    skill_level = int(match.group(2))   # extract skill level (int)
-    return skill_name, skill_level
-  return None, None
 
 """
 Build armour piece object from webpage,
@@ -80,20 +41,9 @@ def get_armour_data():
     return []
 
   # get first armour set link (Hope armour)
-  first_armour_link = new_soup.find('tr')
-  if not first_armour_link:
-    print("Could not find first armour link.")
-    return []
-  
-  first_armour_link = first_armour_link.find('td')
-  if not first_armour_link:
-    print("Could not find first armour link td.")
-    return []
-      
-  first_armour_link = first_armour_link.find('a')
-  if not first_armour_link:
-    print("Could not find first armour link a.")
-    return []
+  first_armour_link = new_soup.find('tr')   \
+                              .find('td')   \
+                              .find('a')
 
   all_armour_data = []
   rank = 'low'    # track rank transition

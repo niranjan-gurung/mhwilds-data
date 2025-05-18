@@ -3,121 +3,63 @@ import requests
 import requests.compat
 import time
 import re
-
 import pprint
+import json
+
+from util import build_skills_lookup, get_skill_rank_data, roman_numeral_to_int
 
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
 
-"""
-Helper method - roman numeral to int
-"""
-def roman_numeral_to_int(roman):
-  result = 0
-  prev_value = 0
-  for char in reversed(roman):
-    value = roman_to_int[char]
-    if value < prev_value:
-      result -= value
-    else:
-      result += value
-    prev_value = value
-  return result
+roman_to_int = {'I': 1, 'V': 5}
 
-"""
-Builds a dictionary mapping skill names to their IDs from the API
-"""
-def build_skills_lookup(api_base_url='http://localhost:5000/api'):
-  skills_lookup = {}
-  try:
-    response = requests.get(f"{api_base_url}/skills")
-    if response.status_code == 200:
-      skills = response.json()
-      for skill in skills:
-        skills_lookup[skill['name']] = skill['id']
-    return skills_lookup
-  except Exception as e:
-    print(f"Error building skills lookup: {e}")
-    return {}
-  
-"""
-Retrieves the skill rank for a given skill ID and level
-"""
-def get_skill_rank_data(skill_id, skill_level, api_base_url='http://localhost:5000/api'):
-  try:
-    response = requests.get(f"{api_base_url}/skills/{skill_id}")
-    if response.status_code == 200:
-      skill_data = response.json()
-      for rank in skill_data.get('ranks', []):
-        if rank['level'] == skill_level:
-          return rank   # from ranks list: get rank object that matches 'skill_level'
-    return None
-  except Exception as e:
-    print(f"Error getting skill rank data: {e}")
+def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
+  if not new_soup:
+    print("Error: new_soup is None. Cannot parse charm.")
     return None
   
-
-skills_lookup = build_skills_lookup()
-if not skills_lookup:
-  print("Failed to build skills lookup. Check API connection.")
-
-homepage = soup.find(attrs={'data-sidebar': 'group-content'})
-a = homepage.find_all('a')
-
-for item in a:
-  if item.text == 'Charms' and 'href' in item.attrs:
-    href = item['href']
-    ar_list_url = requests.compat.urljoin(url, href)
-    new_res = requests.get(ar_list_url)
-    new_soup = BeautifulSoup(new_res.text, 'html.parser')
-    break
-
-# get first charm link:
-first_charm_link = new_soup.find('tbody') \
-                      .find('tr') \
-                      .find('a')
-
-if first_charm_link.text == 'Marathon Charm I' and 'href' in first_charm_link.attrs:
-  href = first_charm_link['href']
-  charm_url = requests.compat.urljoin(url, href)
-  new_res = requests.get(charm_url)
-  new_soup = BeautifulSoup(new_res.text, 'html.parser')
-else:
-  print("First armour link is not Hope or does not have href attribute.")
-  #return []
-
-#counter = 0
-data: list = []
-
-while True:
-  # all div sections that contains necessary charm info:
   content = new_soup.find_all(name='div', attrs={'class': 'my-8'})
   nav = content[0]
   main = content[1]           # main dev - contains charm name + description
   skill_info = content[2]     # need this to reference from skills data
-  #nav_copy = content[3]       # same as nav - redundant
-
+  
   charm_name = main.find('h2').get_text(strip=True)
   charm_desc = main.find('blockquote').get_text(strip=True)
 
+  if charm_name == 'Hope Charm': 
+    is_hope_charm = True
+
+  name = charm_name
+  level = 1
+
   time.sleep(1)
 
-  match = re.match(r'(.+)\s+([IV]+)', charm_name)
+  if is_hope_charm:
+    skill_name = skill_info.find('table')   \
+                           .find('tbody')   \
+                           .find_all('tr')
 
-  if match:
-    name = match.group(1)
-    level_roman = match.group(2)
-    roman_to_int = {'I': 1, 'V': 5}
-    level = roman_numeral_to_int(level_roman)
+    skill1 = skill_name[0].find('td').get_text(strip=True)
+    skill2 = skill_name[1].find('td').get_text(strip=True)
+    skills = [skill1, skill2]
+    skill_level = level
+  else:
+    match = re.match(r'(.+)\s+([IV]+)', charm_name)
 
-  skill_name = skill_info.find('table')   \
-                        .find('tbody')   \
-                        .find('tr')      \
-                        .find('td')      \
-                        .get_text(strip=True)
-  skill_level = level
-  
+    if match:
+      name = match.group(1)
+      level_roman = match.group(2)
+      level = roman_numeral_to_int(level_roman, roman_to_int)
+
+    skill_name = skill_info.find('table')   \
+                           .find('tbody')   \
+                           .find('tr')      \
+                           .find('td')      \
+                           .get_text(strip=True)
+    skills = [skill_name]
+    skill_level = level
+
   charm = next((item for item in data if item['name'] == name), None)
 
   # if charm doesn't exist, create a new charm object
@@ -137,12 +79,15 @@ while True:
   }
 
   print(f"Parsing charm: '{charm_name}'")
-  skill_id = skills_lookup.get(skill_name)
 
-  # get skill rank/level based on id: 
-  skill_rank = get_skill_rank_data(skill_id, skill_level)
-  # append skill rank info to skill object:
-  charm_rank['skills'] = skill_rank
+  for skill in skills:
+    skill_id = skills_lookup.get(skill)
+    if skill_id:
+      # get skill rank/level based on id: 
+      skill_rank = get_skill_rank_data(skill_id, skill_level)
+      # append skill rank info to skill object:
+      charm_rank['skills'].append(skill_rank)
+
   charm['rank'].append(charm_rank)
 
   # navigate to next charm link:
@@ -155,9 +100,81 @@ while True:
     next_charm_url = requests.compat.urljoin(url, href)
     new_res = requests.get(next_charm_url)
     new_soup = BeautifulSoup(new_res.text, 'html.parser')
+    return new_soup
   else:
     print("No next armour link found, ending scrape.")
-    break
-  #counter += 1
+    return None
 
-pprint.pprint(data)
+counter = 0
+def get_charm_data() -> list:
+  data: list = []
+  skills_lookup = build_skills_lookup()
+  if not skills_lookup:
+    print("Failed to build skills lookup. Check API connection.")
+
+  homepage = soup.find(attrs={'data-sidebar': 'group-content'})
+  a = homepage.find_all('a')
+
+  for item in a:
+    if item.text == 'Charms' and 'href' in item.attrs:
+      href = item['href']
+      ar_list_url = requests.compat.urljoin(url, href)
+      new_res = requests.get(ar_list_url)
+      new_soup = BeautifulSoup(new_res.text, 'html.parser')
+      break
+
+  # get first charm link:
+  first_charm_link = new_soup.find('tbody')   \
+                             .find('tr')      \
+                             .find('a')
+
+  if first_charm_link.text == 'Marathon Charm I' and 'href' in first_charm_link.attrs:
+    href = first_charm_link['href']
+    charm_url = requests.compat.urljoin(url, href)
+    new_res = requests.get(charm_url)
+    new_soup = BeautifulSoup(new_res.text, 'html.parser')
+  else:
+    print("First charm link is not Marathon Charm I or does not have href attribute.")
+    return []
+  
+  # parse charm data: 
+  while True:
+    new_soup = parse_charm(new_soup, data, skills_lookup, is_hope_charm=False)
+    if not new_soup:
+      break
+  
+  return data
+
+def post_charm_data(api_base_url='http://localhost:5000/api'):
+  """
+  Posts the scraped charm data to the API
+  """
+  charm_data = get_charm_data()
+  if not charm_data:
+    print("No charm data to post.")
+    return
+      
+  print(f"Found {len(charm_data)} charms to post.")
+  
+  # POST: to the API endpoint
+  try:
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post(
+      f"{api_base_url}/charms",
+      data=json.dumps(charm_data),
+      headers=headers
+    )
+    
+    if response.status_code == 201 or response.status_code == 207:
+      print("Successfully posted charm data!")
+      result = response.json()
+      if 'errors' in result and result['errors']:
+        print(f"Warning: Some items had errors: {result['errors']}")
+      return True
+    else:
+      print(f"Failed to post charm data. Status code: {response.status_code}")
+      print(f"Response: {response.text}")
+      return False
+  except Exception as e:
+    print(f"Error posting charm data: {e}")
+    return False
