@@ -6,20 +6,19 @@ import re
 import pprint
 import json
 
-from util import build_skills_lookup, get_skill_rank_data, roman_numeral_to_int
-from util import lookup
+from utils.common import (
+  build_skills_lookup, 
+  get_skill_rank_data, 
+  roman_numeral_to_int
+)
+
+from utils.get_rarity import get_rarity
 
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
 
 roman_to_int = {'I': 1, 'V': 5}
-
-def get_rarity(charm_name):
-  if charm_name in lookup:
-    return lookup[charm_name]
-  else:
-    return None
 
 def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
   if not new_soup:
@@ -37,7 +36,7 @@ def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
   if charm_name == 'Hope Charm': 
     is_hope_charm = True
 
-  rarity = get_rarity(charm_name)
+  rarity = get_rarity(charm_name, 'charm')
 
   if rarity is None:
     print(f'{charm_name} not found in lookup table')
@@ -115,10 +114,9 @@ def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
     new_soup = BeautifulSoup(new_res.text, 'html.parser')
     return new_soup
   else:
-    print("No next armour link found, ending scrape.")
+    print("No next charm link found, ending scrape.")
     return None
 
-counter = 0
 def get_charm_data() -> list:
   data: list = []
   skills_lookup = build_skills_lookup()

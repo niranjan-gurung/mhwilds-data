@@ -3,7 +3,11 @@ import requests
 import requests.compat
 import re
 import json
-from util import build_skills_lookup, get_skill_rank_data, parse_skill
+from utils.common import (
+  build_skills_lookup, 
+  get_skill_rank_data, 
+  parse_skill
+)
 
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)

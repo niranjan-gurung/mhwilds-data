@@ -1,6 +1,7 @@
 from armour_data import post_armour_data
 from skill_data import get_skill_data
 from charm_data import post_charm_data
+from decoration_data import post_deco_data
 
 # res = requests.post(
 #   'http://localhost:5000/api/skills',
@@ -9,4 +10,5 @@ from charm_data import post_charm_data
 # )
 
 # post_armour_data()
-post_charm_data()
+#post_charm_data()
+post_deco_data()
