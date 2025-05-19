@@ -7,12 +7,19 @@ import pprint
 import json
 
 from util import build_skills_lookup, get_skill_rank_data, roman_numeral_to_int
+from util import lookup
 
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
 
 roman_to_int = {'I': 1, 'V': 5}
+
+def get_rarity(charm_name):
+  if charm_name in lookup:
+    return lookup[charm_name]
+  else:
+    return None
 
 def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
   if not new_soup:
@@ -29,6 +36,11 @@ def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
 
   if charm_name == 'Hope Charm': 
     is_hope_charm = True
+
+  rarity = get_rarity(charm_name)
+
+  if rarity is None:
+    print(f'{charm_name} not found in lookup table')
 
   name = charm_name
   level = 1
@@ -74,7 +86,7 @@ def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
     'name': charm_name,
     'desc': charm_desc,
     'level': level,
-    'rarity': 1,
+    'rarity': rarity,
     'skills': []
   }
 
