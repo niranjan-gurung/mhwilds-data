@@ -3,6 +3,8 @@ import requests
 import requests.compat
 import time
 
+import pprint
+
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
@@ -35,13 +37,13 @@ def get_weapon_skills(weapon_skills):
 
         ranks.append({
           'level': int(skill_level[2:]),
-          'desc': skill_rank_desc
+          'description': skill_rank_desc
         })
 
       weapon_skills_data.append({
         'name': skill_name,
         'type': 'Weapon',
-        'desc': skill_desc,
+        'description': skill_desc,
         'ranks': ranks
       })
       print(f'Process next weapon skill link: {href}')
@@ -77,13 +79,13 @@ def get_armour_skills(armour_skills):
 
         ranks.append({
           'level': int(skill_level[2:]),
-          'desc': skill_rank_desc
+          'description': skill_rank_desc
         })
 
       armour_skills_data.append({
         'name': skill_name,
         'type': 'Armour',
-        'desc': skill_desc,
+        'description': skill_desc,
         'ranks': ranks
       })
       print(f'Process next armour skill link: {href}')
@@ -117,10 +119,13 @@ def get_skill_data() -> list:
 
   skill_data: list = []
   
-  #wp_sk = get_weapon_skills(weapon_skills)
+  wp_sk = get_weapon_skills(weapon_skills)
   ar_sk = get_armour_skills(armour_skills)
 
-  #skill_data.extend(wp_sk)
+  skill_data.extend(wp_sk)
   skill_data.extend(ar_sk)
 
   return skill_data
+
+# sd = get_skill_data()
+# pprint.pprint(sd)

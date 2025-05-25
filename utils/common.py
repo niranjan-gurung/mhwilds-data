@@ -4,10 +4,13 @@ import re
 """
 Builds a dictionary mapping skill names to their IDs from the API
 """
-def build_skills_lookup(api_base_url='http://localhost:5000/api'):
+def build_skills_lookup(api_base_url='https://localhost:5001/api'):
   skills_lookup = {}
   try:
-    response = requests.get(f"{api_base_url}/skills")
+    response = requests.get(
+      f"{api_base_url}/skills",
+      verify=False
+    )
     if response.status_code == 200:
       skills = response.json()
       for skill in skills:
@@ -20,9 +23,12 @@ def build_skills_lookup(api_base_url='http://localhost:5000/api'):
 """
 Retrieves the skill rank for a given skill ID and level
 """
-def get_skill_rank_data(skill_id: int, skill_level: int, api_base_url='http://localhost:5000/api'):
+def get_skill_rank_data(skill_id: int, skill_level: int, api_base_url='https://localhost:5001/api'):
   try:
-    response = requests.get(f"{api_base_url}/skills/{skill_id}")
+    response = requests.get(
+      f"{api_base_url}/skills/{skill_id}",
+      verify=False
+    )
     if response.status_code == 200:
       skill_data = response.json()
       for rank in skill_data.get('ranks', []):

@@ -146,8 +146,8 @@ def get_deco_data() -> list:
   
   return data
 
-d = get_deco_data()
-pprint.pprint(d)
+# d = get_deco_data()
+# pprint.pprint(d)
 
 def post_deco_data(api_base_url='http://localhost:5000/api'):
   """

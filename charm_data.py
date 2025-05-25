@@ -156,7 +156,7 @@ def get_charm_data() -> list:
   
   return data
 
-def post_charm_data(api_base_url='http://localhost:5000/api'):
+def post_charm_data(api_base_url='https://localhost:5001/api'):
   """
   Posts the scraped charm data to the API
   """
