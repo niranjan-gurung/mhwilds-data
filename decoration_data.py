@@ -9,6 +9,9 @@ import json
 from utils.common import build_skills_lookup, get_skill_rank_data
 from utils.get_rarity import get_rarity
 
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
@@ -25,17 +28,17 @@ def parse_deco(new_soup, data, type, skills_lookup, is_dual_skill=False):
   
   deco_name = main.find('h2').get_text(strip=True)
   deco_desc = main.find('blockquote').get_text(strip=True)
+  deco_skill_level = skill_info.find_all('tr')
   
-  print(deco_name)
-
   if deco_name == 'Defense Jewel [1]':
     type = 'Armour'
 
   if '/' in deco_name:
     is_dual_skill = True
 
-  #name = deco_name
-  level = 1
+  skill_level = int(deco_skill_level[0]     \
+                  .find_all('td')[1]        \
+                  .get_text(strip=True)[2])
   rarity = get_rarity(deco_name, 'deco')
 
   if rarity is None:
@@ -47,41 +50,42 @@ def parse_deco(new_soup, data, type, skills_lookup, is_dual_skill=False):
                          .find('tbody')   \
                          .find_all('tr')
 
-  match = re.search(r'\[(\d+)\]', deco_name)
-  if match:
-    #name = deco_name  # Keep the full string for name
-    level = int(match.group(1))
-
   if not is_dual_skill:
-    skills = [skill_name[0].find('td').get_text(strip=True)]
-    skill_level = level
+    skill = skill_name[0].find('td').get_text(strip=True)
   else:
     skill1 = skill_name[0].find('td').get_text(strip=True)
     skill2 = skill_name[1].find('td').get_text(strip=True)
-    skills = [skill1, skill2]
-    skill_level = level
+    skill_level1 = skill_level
+    skill_level2 = int(deco_skill_level[1]    \
+                  .find_all('td')[1]          \
+                  .get_text(strip=True)[2])
 
   decorations = {
     'name': deco_name,
-    'desc': deco_desc,
+    'description': deco_desc,
     'type': type,
     'rarity': rarity,
-    'slot': level,
+    'slot': skill_level,
     'skills': []
   }
 
-  print(f"Parsing charm: '{deco_name}'")
+  print(f"Parsing decoration: '{deco_name}'")
 
-  for skill in skills:
-    if is_dual_skill:
-      # dual skills needs separate levels for each skill
-      pass
+  if is_dual_skill:
+    skill1_id = skills_lookup.get(skill1)
+    skill2_id = skills_lookup.get(skill2)
+    if skill1_id and skill2_id:
+      skill1_rank = get_skill_rank_data(skill1_id, skill_level1)
+      skill2_rank = get_skill_rank_data(skill2_id, skill_level2)
+      if skill1_rank and skill2_rank:
+        # append skill rank info to skill object:
+        decorations['skills'].append(skill1_rank)
+        decorations['skills'].append(skill2_rank)
+  else:
     skill_id = skills_lookup.get(skill)
-    #print(f'skill id: {skill_id}')
     if skill_id:
       # get skill rank/level based on id: 
       skill_rank = get_skill_rank_data(skill_id, skill_level)
-      #print(f'skill rank: {skill_rank}')
       if skill_rank:
         # append skill rank info to skill object:
         decorations['skills'].append(skill_rank)
@@ -136,20 +140,20 @@ def get_deco_data() -> list:
     return []
   
   type = 'Weapon'
-  counter = 0
+  #counter = 0
   # parse charm data: 
-  while counter < 15:
+  while True:
     new_soup = parse_deco(new_soup, data, type, skills_lookup, is_dual_skill=False)
     if not new_soup:
       break
-    counter += 1
+    #counter += 1
   
   return data
 
 # d = get_deco_data()
 # pprint.pprint(d)
 
-def post_deco_data(api_base_url='http://localhost:5000/api'):
+def post_deco_data(api_base_url='https://localhost:5001/api'):
   """
   Posts the scraped decoration data to the API
   """
@@ -157,16 +161,18 @@ def post_deco_data(api_base_url='http://localhost:5000/api'):
   if not deco_data:
     print("No decoration data to post.")
     return
-      
+  
+  pprint.pprint(deco_data)
   print(f"Found {len(deco_data)} decorations to post.")
   
   # POST: to the API endpoint
   try:
     headers = {'Content-Type': 'application/json'}
     response = requests.post(
-      f"{api_base_url}/charms",
+      f"{api_base_url}/decorations",
       data=json.dumps(deco_data),
-      headers=headers
+      headers=headers,
+      verify=False
     )
     
     if response.status_code in (200, 201, 207):

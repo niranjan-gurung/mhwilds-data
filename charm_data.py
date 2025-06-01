@@ -14,6 +14,9 @@ from utils.common import (
 
 from utils.get_rarity import get_rarity
 
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 url = 'https://mhwilds.kiranico.com/'
 res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
@@ -83,7 +86,7 @@ def parse_charm(new_soup, data, skills_lookup, is_hope_charm=False):
 
   charm_rank = {
     'name': charm_name,
-    'desc': charm_desc,
+    'description': charm_desc,
     'level': level,
     'rarity': rarity,
     'skills': []
@@ -148,13 +151,18 @@ def get_charm_data() -> list:
     print("First charm link is not Marathon Charm I or does not have href attribute.")
     return []
   
+  #counter = 0
   # parse charm data: 
   while True:
     new_soup = parse_charm(new_soup, data, skills_lookup, is_hope_charm=False)
     if not new_soup:
       break
+    #counter += 1
   
   return data
+
+# d = get_charm_data()
+# pprint.pprint(d)
 
 def post_charm_data(api_base_url='https://localhost:5001/api'):
   """
@@ -173,7 +181,8 @@ def post_charm_data(api_base_url='https://localhost:5001/api'):
     response = requests.post(
       f"{api_base_url}/charms",
       data=json.dumps(charm_data),
-      headers=headers
+      headers=headers,
+      verify=False
     )
     
     if response.status_code in (200, 201, 207):

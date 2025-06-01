@@ -12,8 +12,6 @@ from utils.common import (
 )
 
 import urllib3
-
-# Suppress only the InsecureRequestWarning from urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 url = 'https://mhwilds.kiranico.com/'

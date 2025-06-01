@@ -29,6 +29,6 @@ import json
 #   print(f"Error posting skill data: {e}")
 #   #return False
 
-post_armour_data()
+#post_armour_data()
 #post_charm_data()
-#post_deco_data()
+post_deco_data()
