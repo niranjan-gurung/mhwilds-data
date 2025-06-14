@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import requests.compat
 import time
+import json
 
 import pprint
 
@@ -129,3 +130,39 @@ def get_skill_data() -> list:
 
 # sd = get_skill_data()
 # pprint.pprint(sd)
+
+def post_skill_data(api_base_url='https://localhost:5001/api'):
+  """
+  Posts the scraped decoration data to the API
+  """
+  skill_data = get_skill_data()
+  if not skill_data:
+    print("No skills data to post.")
+    return
+  
+  pprint.pprint(skill_data)
+  print(f"Found {len(skill_data)} skills to post.")
+  
+  # POST: to the API endpoint
+  try:
+    headers = {'Content-Type': 'application/json'}
+    response = requests.post(
+      f"{api_base_url}/skills",
+      data=json.dumps(skill_data),
+      headers=headers,
+      verify=False
+    )
+    
+    if response.status_code in (200, 201, 207):
+      print("Successfully posted skill data!")
+      result = response.json()
+      if 'errors' in result and result['errors']:
+        print(f"Warning: Some items had errors: {result['errors']}")
+      return True
+    else:
+      print(f"Failed to post skill data. Status code: {response.status_code}")
+      print(f"Response: {response.text}")
+      return False
+  except Exception as e:
+    print(f"Error posting skill data: {e}")
+    return False

@@ -110,7 +110,7 @@ def parse_armour(new_soup, all_armour_data, rank, rarity, skills_lookup):
     # extract slot information
     slot_text = td[2].get_text(strip=True)
     slot_values = re.findall(r'\[(\d+)\]', slot_text)
-    slots = [{'level': int(slot)} for slot in slot_values if int(slot) != 0]
+    slots = [int(slot) for slot in slot_values if int(slot) != 0]
     data[i]['slots'] = slots
 
     # extract skill information
@@ -201,7 +201,7 @@ def get_armour_data() -> list:
     print("First armour link is not Hope or does not have href attribute.")
     return []
 
-  #counter = 0
+  counter = 0
   # process each armour set page
   while True:
     new_soup, rank, rarity = parse_armour(new_soup, all_armour_data, rank, rarity, skills_lookup)
@@ -210,8 +210,8 @@ def get_armour_data() -> list:
     #counter += 1
   return all_armour_data
 
-# d = get_armour_data()
-# pprint.pprint(d)
+#d = get_armour_data()
+#pprint.pprint(d)
 
 def post_armour_data(api_base_url='https://localhost:5001/api'):
   """
