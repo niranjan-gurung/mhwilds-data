@@ -5,7 +5,7 @@ from decoration_data import post_deco_data
 import requests
 import json
 
-#post_skill_data()
+post_skill_data()
 #post_armour_data()
 #post_charm_data()
-post_deco_data()
+#post_deco_data()

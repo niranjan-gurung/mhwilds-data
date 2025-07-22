@@ -3,166 +3,182 @@ import requests
 import requests.compat
 import time
 import json
+import config
+from typing import Optional
 
-import pprint
-
-url = 'https://mhwilds.kiranico.com/'
-res = requests.get(url)
-soup = BeautifulSoup(res.text, 'html.parser')
-
-def get_weapon_skills(weapon_skills):
-  weapon_skills_data: list = []
+"""
+Get skills for both weapon and armour type,
+based on which type is passed as string
+"""
+def get_skills_by_type(skill_rows: list, skill_type: str) -> list[dict]:
+  skills_data: list[dict] = []
   
-  for row in weapon_skills:
+  for row in skill_rows:
     skill_info = row.find_all('td')
     skill_link = row.find('td').find('a')
 
     skill_name = skill_info[0].get_text(strip=True)
     skill_desc = skill_info[1].get_text(strip=True)
 
-    time.sleep(1)
-
     try:
       href = skill_link['href']
-      skill_details = requests.compat.urljoin(url, href)
-      new_res = requests.get(skill_details)
-      new_soup = BeautifulSoup(new_res.text, 'html.parser')
+      skill_details = requests.compat.urljoin(config.BASE_URL, href)
+      res = requests.get(skill_details).content
+      soup = BeautifulSoup(res, 'html.parser')
 
-      ranks: list = []
-      rank_info = new_soup.find('tbody').find_all('tr')
+      ranks = extract_skill_ranks(soup)
 
-      for tds in rank_info:
-        td = tds.find_all('td')
-        skill_level = td[0].get_text(strip=True)
-        skill_rank_desc = td[2].get_text(strip=True)
-
-        ranks.append({
-          'level': int(skill_level[2:]),
-          'description': skill_rank_desc
-        })
-
-      weapon_skills_data.append({
+      skills_data.append({
         'name': skill_name,
-        'type': 'Weapon',
+        'type': skill_type,
         'description': skill_desc,
         'ranks': ranks
       })
+
       print(f'Process next weapon skill link: {href}')
+      time.sleep(config.RATE_LIMIT) # rate limit
+
+    except KeyError:
+      print(f'No href found for skill: {skill_name}')
     except Exception as e:
       print(f"Error processing {href}: {e}")
     
-  return weapon_skills_data
+  return skills_data
 
-def get_armour_skills(armour_skills):
-  armour_skills_data: list = []
-  for row in armour_skills:
-    skill_info = row.find_all('td')
-    skill_link = row.find('td').find('a')
+"""
+Extract all skill ranks from details page
+"""
+def extract_skill_ranks(soup: BeautifulSoup) -> list[dict]:
+  ranks: list = []
+  rank_rows = soup.find('tbody').find_all('tr')
 
-    skill_name = skill_info[0].get_text(strip=True)
-    skill_desc = skill_info[1].get_text(strip=True)
-
-    time.sleep(1)
+  for row in rank_rows:
+    tds = row.find_all('td')
+    skill_level = tds[0].get_text(strip=True)
+    skill_rank_desc = tds[2].get_text(strip=True)
 
     try:
-      href = skill_link['href']
-      skill_details = requests.compat.urljoin(url, href)
-      new_res = requests.get(skill_details)
-      new_soup = BeautifulSoup(new_res.text, 'html.parser')
-
-      ranks: list = []
-      rank_info = new_soup.find('tbody').find_all('tr')
-
-      for tds in rank_info:
-        td = tds.find_all('td')
-        skill_level = td[0].get_text(strip=True)
-        skill_rank_desc = td[2].get_text(strip=True)
-
-        ranks.append({
-          'level': int(skill_level[2:]),
-          'description': skill_rank_desc
-        })
-
-      armour_skills_data.append({
-        'name': skill_name,
-        'type': 'Armour',
-        'description': skill_desc,
-        'ranks': ranks
+      level = int(skill_level[2:]) if skill_level.startswith('Lv') else int(skill_level)
+      ranks.append({
+        'level': level,
+        'description': skill_rank_desc
       })
-      print(f'Process next armour skill link: {href}')
-    except Exception as e:
-      print(f"Error processing {href}: {e}")
+    except ValueError:
+      print(f'could not parse skill level: {skill_level}')
 
-  return armour_skills_data
+  return ranks
 
-def get_skill_data() -> list:
+"""
+Get skills page url from homepage
+"""
+def find_skills_page_url() -> Optional[str]:
+  res = requests.get(config.BASE_URL).content
+  soup = BeautifulSoup(res, 'html.parser')
+  homepage = soup.find(attrs={'data-sidebar': 'group-content'})
+  if not homepage: 
+    return None
+  
+  links = homepage.find_all('a')
+
+  for item in links:
+    if item.text == 'Skills' and 'href' in item.attrs:
+      return requests.compat.urljoin(config.BASE_URL, item['href'])
+  
+  return None
+
+"""
+Get all weapon + armour skills and,
+consolidate into single list[dict].
+
+TODO: 
+- group skills 
+- set bonus
+"""
+def get_skill_data() -> list[dict]:
   """
   homepage -> skills page
   """
-  homepage = soup.find(attrs={'data-sidebar': 'group-content'})
-  a = homepage.find_all('a')
-  for item in a:
-    if item.text == 'Skills' and 'href' in item.attrs:
-      href = item['href']
-      ar_list_url = requests.compat.urljoin(url, href)
-      new_res = requests.get(ar_list_url)
-      new_soup = BeautifulSoup(new_res.text, 'html.parser')
-      break
+  try:
+    skills_page_url = find_skills_page_url()
+    res = requests.get(skills_page_url).content
+    soup = BeautifulSoup(res, 'html.parser')
 
-  tables = new_soup.find_all('tbody')
-  t1 = tables[0]  # weapon skills
-  t2 = tables[1]  # armour skills
-  t3 = tables[2]  # group skill/bonus
-  t4 = tables[3]  # set bonus
+    if not skills_page_url:
+      print("could not find skills page url")
+      return []
+  except Exception as e:
+    print(f'Error in get_skill_data: {e}')
+    return []
 
-  weapon_skills = t1.find_all('tr')
-  armour_skills = t2.find_all('tr')
+  tables = soup.find_all('tbody')
+  weapon_skills_table = tables[0]  # weapon skills
+  armour_skills_table = tables[1]  # armour skills
 
-  skill_data: list = []
+  # todo in the future:
+  group_skills_table  = tables[2]  # group skill/bonus
+  set_bonus_table     = tables[3]  # set bonus
+
+  weapon_skills = weapon_skills_table.find_all('tr')
+  armour_skills = armour_skills_table.find_all('tr')
+
+  skill_data: list[dict] = []
   
-  wp_sk = get_weapon_skills(weapon_skills)
-  ar_sk = get_armour_skills(armour_skills)
+  wp_sk = get_skills_by_type(weapon_skills, 'Weapon')
+  ar_sk = get_skills_by_type(armour_skills, 'Armour')
 
   skill_data.extend(wp_sk)
   skill_data.extend(ar_sk)
 
   return skill_data
 
-# sd = get_skill_data()
-# pprint.pprint(sd)
+"""
+Save list of skill dicts as json for reference
+"""
+def dump_json(skill_data: list[dict]):
+  with open('data/skills.json', 'w') as f:
+    json.dump(skill_data, f, indent=2)
+  print(f'success: skill data saved as json')
 
-def post_skill_data(api_base_url='https://localhost:5001/api'):
-  """
-  Posts the scraped decoration data to the API
-  """
+"""
+Posts the scraped skills data to the API
+"""
+def post_skill_data(api_base_url: str = config.API_BASE_URL) -> bool:
+  print('starting skill data scraping...')
   skill_data = get_skill_data()
+
   if not skill_data:
     print("No skills data to post.")
     return
   
-  pprint.pprint(skill_data)
   print(f"Found {len(skill_data)} skills to post.")
-  
+
   # POST: to the API endpoint
   try:
     headers = {'Content-Type': 'application/json'}
     response = requests.post(
-      f"{api_base_url}/skills",
-      data=json.dumps(skill_data),
+      f"{api_base_url}/skills/range",
+      data=skill_data,
       headers=headers,
-      verify=False
+      verify=False,
+      timeout=30
     )
+
+    response.raise_for_status()
     
-    if response.status_code in (200, 201, 207):
-      print("Successfully posted skill data!")
-      result = response.json()
-      if 'errors' in result and result['errors']:
-        print(f"Warning: Some items had errors: {result['errors']}")
-      return True
-    else:
-      print(f"Failed to post skill data. Status code: {response.status_code}")
-      print(f"Response: {response.text}")
-      return False
+    # dump json to file:
+    dump_json(skill_data)
+
+    result = response.json()
+    if 'errors' in result and result['errors']:
+      print(f"Warning: Some items had errors: {result['errors']}")
+    return True
+
+  except requests.exceptions.RequestException as e:
+    print(f"HTTP error posting skill data: {e}")
+    return False
+  except json.JSONDecodeError as e:
+    print(f"Error parsing API response: {e}")
+    return False
   except Exception as e:
-    print(f"Error posting skill data: {e}")
+    print(f"Unexpected error posting skill data: {e}")
     return False
