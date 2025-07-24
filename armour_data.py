@@ -183,6 +183,9 @@ def parse_armour(
   time.sleep(config.RATE_LIMIT)
   return armour_pieces, rank, rarity
 
+"""
+Find link to first armour set (Hope armour)
+"""
 def get_first_armour_url(soup: BeautifulSoup) -> Optional[str]:
   try:
     link = soup.find('tr')   \
@@ -214,13 +217,10 @@ def find_next_armour_url(soup: BeautifulSoup) -> Optional[str]:
     return None
     
 """
-Build armour piece object from webpage,
-needs to match armour model/schema from API 
+Scrapes armour data from the website and builds armour object,
+matches armour model/schema from API
 """
 def get_armour_data() -> list[dict]:
-  """
-  Scrapes armour data from the website and formats it for the API
-  """
   print('building skills lookup...')
   skills_lookup = build_skills_lookup()
   if not skills_lookup:
