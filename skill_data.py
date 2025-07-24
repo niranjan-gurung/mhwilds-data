@@ -4,6 +4,7 @@ import requests.compat
 import time
 import json
 import config
+from utils.dump_json import dump_json
 from typing import Optional
 
 """
@@ -100,12 +101,13 @@ def get_skill_data() -> list[dict]:
   """
   try:
     skills_page_url = find_skills_page_url()
-    res = requests.get(skills_page_url).content
-    soup = BeautifulSoup(res, 'html.parser')
-
     if not skills_page_url:
       print("could not find skills page url")
       return []
+    
+    res = requests.get(skills_page_url).content
+    soup = BeautifulSoup(res, 'html.parser')
+
   except Exception as e:
     print(f'Error in get_skill_data: {e}')
     return []
@@ -130,14 +132,6 @@ def get_skill_data() -> list[dict]:
   skill_data.extend(ar_sk)
 
   return skill_data
-
-"""
-Save list of skill dicts as json for reference
-"""
-def dump_json(skill_data: list[dict]):
-  with open('data/skills.json', 'w') as f:
-    json.dump(skill_data, f, indent=2)
-  print(f'success: skill data saved as json')
 
 """
 Posts the scraped skills data to the API
@@ -165,8 +159,10 @@ def post_skill_data(api_base_url: str = config.API_BASE_URL) -> bool:
 
     response.raise_for_status()
     
+    print("Successfully posted armour data!")
+
     # dump json to file:
-    dump_json(skill_data)
+    dump_json('skills', skill_data)
 
     result = response.json()
     if 'errors' in result and result['errors']:

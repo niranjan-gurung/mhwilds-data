@@ -4,7 +4,7 @@ import re
 """
 Builds a dictionary mapping skill names to their IDs from the API
 """
-def build_skills_lookup(api_base_url='https://localhost:5001/api'):
+def build_skills_lookup(api_base_url='https://localhost:5001/api') -> dict:
   skills_lookup = {}
   try:
     response = requests.get(
