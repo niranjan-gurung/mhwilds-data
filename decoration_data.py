@@ -123,7 +123,10 @@ def extract_skills(
       if skill1_id:
         skill1_rank = get_skill_rank_data(skill1_id, skill1_level)
         if skill1_rank:
-          skills.append(skill1_rank)
+          skill_reference = {
+            "id": skill1_rank["id"]  
+          }
+          skills.append(skill_reference)
       else:
         print(f"Unknown skill: {skill1_name}")
       
@@ -132,7 +135,10 @@ def extract_skills(
       if skill2_id:
         skill2_rank = get_skill_rank_data(skill2_id, skill2_level)
         if skill2_rank:
-          skills.append(skill2_rank)
+          skill_reference = {
+            "id": skill2_rank["id"]  
+          }
+          skills.append(skill_reference)
       else:
         print(f"Unknown skill: {skill2_name}")
             
@@ -145,7 +151,10 @@ def extract_skills(
       if skill_id:
         skill_rank = get_skill_rank_data(skill_id, skill_level)
         if skill_rank:
-          skills.append(skill_rank)
+          skill_reference = {
+            "id": skill_rank["id"] 
+          }
+          skills.append(skill_reference)
       else:
         print(f"Unknown skill: {skill_name}")
   
@@ -275,7 +284,7 @@ def post_deco_data(api_base_url: str = config.API_BASE_URL) -> bool:
   deco_data = get_deco_data()
   if not deco_data:
     print("No decoration data to post.")
-    return
+    return False
   
   print(f"Found {len(deco_data)} decorations to post.")
   
@@ -284,7 +293,7 @@ def post_deco_data(api_base_url: str = config.API_BASE_URL) -> bool:
     headers = {'Content-Type': 'application/json'}
     response = requests.post(
       f"{api_base_url}/decorations/range",
-      data=deco_data,
+      json=deco_data,
       headers=headers,
       verify=False,
       timeout=30
@@ -297,9 +306,18 @@ def post_deco_data(api_base_url: str = config.API_BASE_URL) -> bool:
     # dump json to file:
     dump_json('decorations', deco_data)
     
-    result = response.json()
-    if result.get('errors'):
-      print(f"Warning: Some items had errors: {result['errors']}")
+    # handle both list and dict responses from API
+    try:
+      result = response.json()
+      if isinstance(result, dict) and result.get('errors'):
+        print(f"Warning: Some items had errors: {result['errors']}")
+      elif isinstance(result, list):
+        print(f"Successfully created {len(result)} decorations in the database.")
+      else:
+        print("Decorations posted successfully!")
+    except json.JSONDecodeError:
+      print("Decorations posted successfully (no response data)!")
+
     return True
         
   except requests.exceptions.RequestException as e:

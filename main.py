@@ -24,7 +24,7 @@ def get_user_choice():
       if choice in ['0', '1', '2', '3', '4']:
         return choice
       else:
-        print("Invalid choice. Please enter a number between 0-5.")
+        print("Invalid choice. Please enter a number between 0-4.")
     except KeyboardInterrupt:
       print("\n\nExiting...")
       sys.exit(0)

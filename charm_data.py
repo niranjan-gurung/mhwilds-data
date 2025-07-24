@@ -61,7 +61,10 @@ def extract_skills(
         if skill_id:
           skill_rank = get_skill_rank_data(skill_id, skill_level)
           if skill_rank:
-            skills.append(skill_rank)
+            skill_reference = {
+              "id": skill_rank["id"]  # extract just the rank ID from the full rank object
+            }
+            skills.append(skill_reference)
         else:
           print(f"Unknown skill: {skill_name}")
     else:   # rest of the charms only contain single skill
@@ -71,7 +74,10 @@ def extract_skills(
         if skill_id:
           skill_rank = get_skill_rank_data(skill_id, skill_level)
           if skill_rank:
-            skills.append(skill_rank)
+            skill_reference = {
+              "id": skill_rank["id"]
+            }
+            skills.append(skill_reference)
         else:
           print(f"Unknown skill: {skill_name}")
   except Exception as e:
@@ -268,7 +274,7 @@ def post_charm_data(api_base_url: str = config.API_BASE_URL) -> bool:
   charm_data = get_charm_data()
   if not charm_data:
     print("No charm data to post.")
-    return
+    return False
       
   print(f"Found {len(charm_data)} charms to post.")
   
@@ -277,7 +283,7 @@ def post_charm_data(api_base_url: str = config.API_BASE_URL) -> bool:
     headers = {'Content-Type': 'application/json'}
     response = requests.post(
       f"{api_base_url}/charms/range",
-      data=charm_data,
+      json=charm_data,
       headers=headers,
       verify=False,
       timeout=30
@@ -290,9 +296,18 @@ def post_charm_data(api_base_url: str = config.API_BASE_URL) -> bool:
     # dump json to file:
     dump_json('charms', charm_data)
     
-    result = response.json()
-    if 'errors' in result and result['errors']:
-      print(f"Warning: Some items had errors: {result['errors']}")
+    # handle both list and dict responses from API
+    try:
+      result = response.json()
+      if isinstance(result, dict) and result.get('errors'):
+        print(f"Warning: Some items had errors: {result['errors']}")
+      elif isinstance(result, list):
+        print(f"Successfully created {len(result)} charms in the database.")
+      else:
+        print("Charms posted successfully!")
+    except json.JSONDecodeError:
+      print("Charms posted successfully (no response data)!")
+
     return True
   
   except requests.exceptions.RequestException as e:

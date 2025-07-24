@@ -88,7 +88,12 @@ def extract_skills(skill_elements, skills_lookup: dict[str, int]) -> list[dict]:
       print(f"Could not find rank ID for skill: {skill_name} level {skill_level}")
       continue
 
-    skills.append(skill_rank)
+    # only send skill rank id, not full skill details
+    skill_reference = {
+      'id': skill_rank['id']
+    }
+
+    skills.append(skill_reference)
 
   return skills
 
@@ -97,15 +102,19 @@ Parse each armour page
 """
 def parse_armour(
     soup: BeautifulSoup, 
+    all_armour_data: list, 
     rank: str, 
     rarity: int, 
     skills_lookup: dict[str, int]
-  ) -> tuple[list[dict], str, int]:
+  ) -> tuple[Optional[BeautifulSoup], str, int]:
 
   if not soup:
     print("Error: soup is None. Cannot parse armour.")
     return [], rank, rarity
   
+  # find navigation first
+  nav = soup.find(name='nav', attrs={'role': 'navigation'})
+
   tables = soup.find_all('tbody')
   if len(tables) < 3:
     print("Required tables not found on page.")
@@ -116,9 +125,9 @@ def parse_armour(
 
   armour_pieces = []
 
-  for i, (t2rows, t3rows) in enumerate(zip(t2rows, t3rows)):
+  for row in t2rows:
     try:
-      t2cells = t2rows.find_all('td')
+      t2cells = row.find_all('td')
       if len(t2cells) < 8:
         print("Row doesn't have enough cells, skipping.")
         continue
@@ -143,21 +152,6 @@ def parse_armour(
         "dragon": int(t2cells[7].get_text(strip=True))
       }
 
-      t3cells = t3rows.find_all('td')
-      if len(t3cells) < 3:
-        print("Row doesn't have enough cells, skipping.")
-        continue
-
-      # extract slots
-      slot_text = t3cells[2].get_text(strip=True)
-      slots = extract_slots(slot_text)
-
-      # extract skills
-      skills = []
-      if len(t3cells) > 3 and t3cells[3].get_text(strip=True):
-        skill_elements = t3cells[3].find_all('div')
-        skills = extract_skills(skill_elements, skills_lookup)
-
       # create the armour object
       armour_piece = {
         'name': name,
@@ -167,21 +161,72 @@ def parse_armour(
         'rarity': rarity,
         'defense': defense,
         'resistances': resistances,
-        'slots': slots,
-        'skills': skills  
+        'slots': [],
+        'skills': []  
       }
-
       armour_pieces.append(armour_piece)
-      
+
     except (ValueError, IndexError) as e:
       print(f"Error parsing armour piece at index {i}: {e}")
       continue
     except Exception as e:
-      print(f"Unexpected error parsing armour piece at index {i}: {e}")
+      print(f"Error processing slots/skills at index {i}: {e}")
       continue
 
-  time.sleep(config.RATE_LIMIT)
-  return armour_pieces, rank, rarity
+  # extract slots and skills information
+  for i, row in enumerate(t3rows):
+    if i >= len(armour_pieces):
+      print(f"Index {i} out of range for data (length: {len(armour_pieces)})")
+      continue
+
+    try:
+      t3cells = row.find_all('td')
+      if len(t3cells) < 3:
+        print("Row doesn't have enough cells, skipping.")
+        continue
+
+      # extract slots
+      slot_text = t3cells[2].get_text(strip=True)
+      slots = extract_slots(slot_text)
+      armour_pieces[i]['slots'] = slots
+
+      # extract skills
+      skills = []
+      if len(t3cells) > 3 and t3cells[3].get_text(strip=True):
+        skill_elements = t3cells[3].find_all('div')
+        skills = extract_skills(skill_elements, skills_lookup)
+        armour_pieces[i]['skills'] = skills
+
+    except Exception as e:
+      print(f"Error processing slots/skills at index {i}: {e}")
+      continue
+    
+  all_armour_data.extend(armour_pieces)
+
+  # find link to next armour set (using original working pattern)
+  try:
+    if nav:
+      next_armour = nav.find('ul').find_all('li')[-1].find('a')
+      
+      if next_armour and 'href' in next_armour.attrs:
+        href = next_armour['href']
+        next_armour_url = requests.compat.urljoin(config.BASE_URL, href)
+        print(f"Found next armour set: {next_armour_url}")
+        
+        time.sleep(config.RATE_LIMIT)
+        new_res = requests.get(next_armour_url)
+        new_soup = BeautifulSoup(new_res.text, 'html.parser')
+        return new_soup, rank, rarity
+      else:
+        print("No next armour link found, ending scrape.")
+        return None, rank, rarity
+    else:
+      print("No navigation found on page.")
+      return None, rank, rarity
+      
+  except Exception as e:
+    print(f"Error finding next armour URL: {e}")
+    return None, rank, rarity
 
 """
 Find link to first armour set (Hope armour)
@@ -201,21 +246,6 @@ def get_first_armour_url(soup: BeautifulSoup) -> Optional[str]:
     print(f'Error getting first armour URL: {e}')
     return None
 
-"""
-Find link to next armour set
-"""
-def find_next_armour_url(soup: BeautifulSoup) -> Optional[str]:
-  try:
-    next_armour = soup.find('ul') \
-                      .find_all('li')[-1] \
-                      .find('a')
-    if next_armour and 'href' in next_armour.attrs:
-      return requests.compat.urljoin(config.BASE_URL, next_armour['href'])
-    return None
-  except Exception as e:
-    print(f'Error finding next armour URL: {e}')
-    return None
-    
 """
 Scrapes armour data from the website and builds armour object,
 matches armour model/schema from API
@@ -253,26 +283,23 @@ def get_armour_data() -> list[dict]:
   rarity = 1
   current_url = first_armour_url
   
+  # get the first armour page
+  try:
+    res = requests.get(first_armour_url)
+    current_soup = BeautifulSoup(res.text, 'html.parser')
+  except Exception as e:
+    print(f"Error fetching first armour page: {e}")
+    return []
+  
   # process each armour set page
-  while current_url:
+  while current_soup:
     try:
-      print(f'fetching: {current_url}')
-      res = requests.get(current_url).content
-      soup = BeautifulSoup(res, 'html.parser')
-      
-      armour_pieces, rank, rarity = parse_armour(soup, rank, rarity, skills_lookup)
-      all_armour_data.extend(armour_pieces)
-
-      current_url = find_next_armour_url(soup)
-      
-      if not current_url:
-        print('no more armour sets found, ending scraping process.')
-        break
+      current_soup, rank, rarity = parse_armour(current_soup, all_armour_data, rank, rarity, skills_lookup)
     except Exception as e:
-      print(f'Error processing armour url {current_url}: {e}')
+      print(f'Error processing armour page: {e}')
       break
       
-  print(f'scraping finished. Found {len(all_armour_data)} armour pieces.')
+  print(f'Scraping finished. Found {len(all_armour_data)} armour pieces.')
   return all_armour_data
 
 """
@@ -282,7 +309,7 @@ def post_armour_data(api_base_url: str = config.API_BASE_URL) -> bool:
   armour_data = get_armour_data()
   if not armour_data:
     print("No armour data to post.")
-    return
+    return False
       
   print(f"Found {len(armour_data)} armour pieces to post.")
   
@@ -291,7 +318,7 @@ def post_armour_data(api_base_url: str = config.API_BASE_URL) -> bool:
     headers = {'Content-Type': 'application/json'}
     response = requests.post(
       f"{api_base_url}/armours/range",
-      data=armour_data,
+      json=armour_data,
       headers=headers,
       verify=False,
       timeout=30
@@ -304,9 +331,18 @@ def post_armour_data(api_base_url: str = config.API_BASE_URL) -> bool:
     # dump json to file:
     dump_json('armours', armour_data)
     
-    result = response.json()
-    if 'errors' in result and result['errors']:
-      print(f"Warning: Some items had errors: {result['errors']}")
+    # handle both list and dict responses from API
+    try:
+      result = response.json()
+      if isinstance(result, dict) and result.get('errors'):
+        print(f"Warning: Some items had errors: {result['errors']}")
+      elif isinstance(result, list):
+        print(f"Successfully created {len(result)} armours in the database.")
+      else:
+        print("Armours posted successfully!")
+    except json.JSONDecodeError:
+      print("Armours posted successfully (no response data)!")
+      
     return True
   
   except requests.exceptions.RequestException as e:

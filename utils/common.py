@@ -9,7 +9,7 @@ def build_skills_lookup(api_base_url: str = config.API_BASE_URL) -> dict:
   skills_lookup = {}
   try:
     response = requests.get(
-      f"{api_base_url}/skills/range",
+      f"{api_base_url}/skills",
       verify=False
     )
     if response.status_code == 200:

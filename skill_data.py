@@ -142,7 +142,7 @@ def post_skill_data(api_base_url: str = config.API_BASE_URL) -> bool:
 
   if not skill_data:
     print("No skills data to post.")
-    return
+    return False
   
   print(f"Found {len(skill_data)} skills to post.")
 
@@ -151,7 +151,7 @@ def post_skill_data(api_base_url: str = config.API_BASE_URL) -> bool:
     headers = {'Content-Type': 'application/json'}
     response = requests.post(
       f"{api_base_url}/skills/range",
-      data=skill_data,
+      json=skill_data,
       headers=headers,
       verify=False,
       timeout=30
@@ -164,9 +164,18 @@ def post_skill_data(api_base_url: str = config.API_BASE_URL) -> bool:
     # dump json to file:
     dump_json('skills', skill_data)
 
-    result = response.json()
-    if 'errors' in result and result['errors']:
-      print(f"Warning: Some items had errors: {result['errors']}")
+    # handle both list and dict responses from API
+    try:
+      result = response.json()
+      if isinstance(result, dict) and result.get('errors'):
+        print(f"Warning: Some items had errors: {result['errors']}")
+      elif isinstance(result, list):
+        print(f"Successfully created {len(result)} skills in the database.")
+      else:
+        print("Skills posted successfully!")
+    except json.JSONDecodeError:
+      print("Skills posted successfully (no response data)!")
+      
     return True
 
   except requests.exceptions.RequestException as e:

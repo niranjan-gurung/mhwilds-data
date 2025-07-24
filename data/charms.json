@@ -1,0 +1,2208 @@
+[
+  {
+    "name": "Marathon Charm",
+    "ranks": [
+      {
+        "name": "Marathon Charm I",
+        "description": "A charm that grants the Marathon Runner skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 244
+          }
+        ]
+      },
+      {
+        "name": "Marathon Charm II",
+        "description": "A charm that grants the Marathon Runner skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 245
+          }
+        ]
+      },
+      {
+        "name": "Marathon Charm III",
+        "description": "A charm that grants the Marathon Runner skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 246
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fitness Charm",
+    "ranks": [
+      {
+        "name": "Fitness Charm I",
+        "description": "A charm that grants the Constitution skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 236
+          }
+        ]
+      },
+      {
+        "name": "Fitness Charm II",
+        "description": "A charm that grants the Constitution skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 237
+          }
+        ]
+      },
+      {
+        "name": "Fitness Charm III",
+        "description": "A charm that grants the Constitution skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 238
+          }
+        ]
+      },
+      {
+        "name": "Fitness Charm IV",
+        "description": "A charm that grants the Constitution skill.",
+        "level": 4,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 239
+          }
+        ]
+      },
+      {
+        "name": "Fitness Charm V",
+        "description": "A charm that grants the Constitution skill.",
+        "level": 5,
+        "rarity": 8,
+        "skills": [
+          {
+            "id": 240
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sheathe Charm",
+    "ranks": [
+      {
+        "name": "Sheathe Charm I",
+        "description": "A charm that grants the Quick Sheathe skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 312
+          }
+        ]
+      },
+      {
+        "name": "Sheathe Charm II",
+        "description": "A charm that grants the Quick Sheathe skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 313
+          }
+        ]
+      },
+      {
+        "name": "Sheathe Charm III",
+        "description": "A charm that grants the Quick Sheathe skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 314
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Challenger Charm",
+    "ranks": [
+      {
+        "name": "Challenger Charm I",
+        "description": "A charm that grants the Agitator skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 250
+          }
+        ]
+      },
+      {
+        "name": "Challenger Charm II",
+        "description": "A charm that grants the Agitator skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 251
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Unscathed Charm",
+    "ranks": [
+      {
+        "name": "Unscathed Charm I",
+        "description": "A charm that grants the Peak Performance skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 152
+          }
+        ]
+      },
+      {
+        "name": "Unscathed Charm II",
+        "description": "A charm that grants the Peak Performance skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 153
+          }
+        ]
+      },
+      {
+        "name": "Unscathed Charm III",
+        "description": "A charm that grants the Peak Performance skill.",
+        "level": 3,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 154
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fury Charm",
+    "ranks": [
+      {
+        "name": "Fury Charm I",
+        "description": "A charm that grants the Resentment skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 142
+          }
+        ]
+      },
+      {
+        "name": "Fury Charm II",
+        "description": "A charm that grants the Resentment skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 143
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Exploiter Charm",
+    "ranks": [
+      {
+        "name": "Exploiter Charm I",
+        "description": "A charm that grants the Weakness Exploit skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 160
+          }
+        ]
+      },
+      {
+        "name": "Exploiter Charm II",
+        "description": "A charm that grants the Weakness Exploit skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 161
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Power Charm",
+    "ranks": [
+      {
+        "name": "Power Charm I",
+        "description": "A charm that grants the Latent Power skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 255
+          }
+        ]
+      },
+      {
+        "name": "Power Charm II",
+        "description": "A charm that grants the Latent Power skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 256
+          }
+        ]
+      },
+      {
+        "name": "Power Charm III",
+        "description": "A charm that grants the Latent Power skill.",
+        "level": 3,
+        "rarity": 8,
+        "skills": [
+          {
+            "id": 257
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mighty Charm",
+    "ranks": [
+      {
+        "name": "Mighty Charm I",
+        "description": "A charm that grants the Maximum Might skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 165
+          }
+        ]
+      },
+      {
+        "name": "Mighty Charm II",
+        "description": "A charm that grants the Maximum Might skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 166
+          }
+        ]
+      },
+      {
+        "name": "Mighty Charm III",
+        "description": "A charm that grants the Maximum Might skill.",
+        "level": 3,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 167
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Surge Charm",
+    "ranks": [
+      {
+        "name": "Surge Charm I",
+        "description": "A charm that grants the Stamina Surge skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 241
+          }
+        ]
+      },
+      {
+        "name": "Surge Charm II",
+        "description": "A charm that grants the Stamina Surge skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 242
+          }
+        ]
+      },
+      {
+        "name": "Surge Charm III",
+        "description": "A charm that grants the Stamina Surge skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 243
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Defense Charm",
+    "ranks": [
+      {
+        "name": "Defense Charm I",
+        "description": "A charm that grants the Defense Boost skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 171
+          }
+        ]
+      },
+      {
+        "name": "Defense Charm II",
+        "description": "A charm that grants the Defense Boost skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 172
+          }
+        ]
+      },
+      {
+        "name": "Defense Charm III",
+        "description": "A charm that grants the Defense Boost skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 173
+          }
+        ]
+      },
+      {
+        "name": "Defense Charm IV",
+        "description": "A charm that grants the Defense Boost skill.",
+        "level": 4,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 174
+          }
+        ]
+      },
+      {
+        "name": "Defense Charm V",
+        "description": "A charm that grants the Defense Boost skill.",
+        "level": 5,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 175
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blessing Charm",
+    "ranks": [
+      {
+        "name": "Blessing Charm I",
+        "description": "A charm that grants the Divine Blessing skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 178
+          }
+        ]
+      },
+      {
+        "name": "Blessing Charm II",
+        "description": "A charm that grants the Divine Blessing skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 179
+          }
+        ]
+      },
+      {
+        "name": "Blessing Charm III",
+        "description": "A charm that grants the Divine Blessing skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 180
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Recovery Charm",
+    "ranks": [
+      {
+        "name": "Recovery Charm I",
+        "description": "A charm that grants the Recovery Up skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 227
+          }
+        ]
+      },
+      {
+        "name": "Recovery Charm II",
+        "description": "A charm that grants the Recovery Up skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 228
+          }
+        ]
+      },
+      {
+        "name": "Recovery Charm III",
+        "description": "A charm that grants the Recovery Up skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 229
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Speed Heal Charm",
+    "ranks": [
+      {
+        "name": "Speed Heal Charm I",
+        "description": "A charm that grants the Recovery Speed skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 230
+          }
+        ]
+      },
+      {
+        "name": "Speed Heal Charm II",
+        "description": "A charm that grants the Recovery Speed skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 231
+          }
+        ]
+      },
+      {
+        "name": "Speed Heal Charm III",
+        "description": "A charm that grants the Recovery Speed skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 232
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Glutton's Charm",
+    "ranks": [
+      {
+        "name": "Glutton's Charm I",
+        "description": "A charm that grants the Speed Eating skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 327
+          }
+        ]
+      },
+      {
+        "name": "Glutton's Charm II",
+        "description": "A charm that grants the Speed Eating skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 328
+          }
+        ]
+      },
+      {
+        "name": "Glutton's Charm III",
+        "description": "A charm that grants the Speed Eating skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 329
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Earplugs Charm",
+    "ranks": [
+      {
+        "name": "Earplugs Charm I",
+        "description": "A charm that grants the Earplugs skill.",
+        "level": 1,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 309
+          }
+        ]
+      },
+      {
+        "name": "Earplugs Charm II",
+        "description": "A charm that grants the Earplugs skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 310
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Windproof Charm",
+    "ranks": [
+      {
+        "name": "Windproof Charm I",
+        "description": "A charm that grants the Windproof skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 315
+          }
+        ]
+      },
+      {
+        "name": "Windproof Charm II",
+        "description": "A charm that grants the Windproof skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 316
+          }
+        ]
+      },
+      {
+        "name": "Windproof Charm III",
+        "description": "A charm that grants the Windproof skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 317
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tremor Charm",
+    "ranks": [
+      {
+        "name": "Tremor Charm I",
+        "description": "A charm that grants the Tremor Resistance skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 318
+          }
+        ]
+      },
+      {
+        "name": "Tremor Charm II",
+        "description": "A charm that grants the Tremor Resistance skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 319
+          }
+        ]
+      },
+      {
+        "name": "Tremor Charm III",
+        "description": "A charm that grants the Tremor Resistance skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 320
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Evasion Charm",
+    "ranks": [
+      {
+        "name": "Evasion Charm I",
+        "description": "A charm that grants the Evade Window skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 301
+          }
+        ]
+      },
+      {
+        "name": "Evasion Charm II",
+        "description": "A charm that grants the Evade Window skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 302
+          }
+        ]
+      },
+      {
+        "name": "Evasion Charm III",
+        "description": "A charm that grants the Evade Window skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 303
+          }
+        ]
+      },
+      {
+        "name": "Evasion Charm IV",
+        "description": "A charm that grants the Evade Window skill.",
+        "level": 4,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 304
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Leaping Charm",
+    "ranks": [
+      {
+        "name": "Leaping Charm I",
+        "description": "A charm that grants the Evade Extender skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 306
+          }
+        ]
+      },
+      {
+        "name": "Leaping Charm II",
+        "description": "A charm that grants the Evade Extender skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 307
+          }
+        ]
+      },
+      {
+        "name": "Leaping Charm III",
+        "description": "A charm that grants the Evade Extender skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 308
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fire Charm",
+    "ranks": [
+      {
+        "name": "Fire Charm I",
+        "description": "A charm that grants the Fire Resistance skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 181
+          }
+        ]
+      },
+      {
+        "name": "Fire Charm II",
+        "description": "A charm that grants the Fire Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 182
+          }
+        ]
+      },
+      {
+        "name": "Fire Charm III",
+        "description": "A charm that grants the Fire Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 183
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Water Charm",
+    "ranks": [
+      {
+        "name": "Water Charm I",
+        "description": "A charm that grants the Water Resistance skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 184
+          }
+        ]
+      },
+      {
+        "name": "Water Charm II",
+        "description": "A charm that grants the Water Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 185
+          }
+        ]
+      },
+      {
+        "name": "Water Charm III",
+        "description": "A charm that grants the Water Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 186
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Thunder Charm",
+    "ranks": [
+      {
+        "name": "Thunder Charm I",
+        "description": "A charm that grants the Thunder Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 187
+          }
+        ]
+      },
+      {
+        "name": "Thunder Charm II",
+        "description": "A charm that grants the Thunder Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 188
+          }
+        ]
+      },
+      {
+        "name": "Thunder Charm III",
+        "description": "A charm that grants the Thunder Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 189
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ice Charm",
+    "ranks": [
+      {
+        "name": "Ice Charm I",
+        "description": "A charm that grants the Ice Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 190
+          }
+        ]
+      },
+      {
+        "name": "Ice Charm II",
+        "description": "A charm that grants the Ice Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 191
+          }
+        ]
+      },
+      {
+        "name": "Ice Charm III",
+        "description": "A charm that grants the Ice Resistance skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 192
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dragon Charm",
+    "ranks": [
+      {
+        "name": "Dragon Charm I",
+        "description": "A charm that grants the Dragon Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 193
+          }
+        ]
+      },
+      {
+        "name": "Dragon Charm II",
+        "description": "A charm that grants the Dragon Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 194
+          }
+        ]
+      },
+      {
+        "name": "Dragon Charm III",
+        "description": "A charm that grants the Dragon Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 195
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blight Charm",
+    "ranks": [
+      {
+        "name": "Blight Charm I",
+        "description": "A charm that grants the Blight Resistance skill.",
+        "level": 1,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 208
+          }
+        ]
+      },
+      {
+        "name": "Blight Charm II",
+        "description": "A charm that grants the Blight Resistance skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 209
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Poison Charm",
+    "ranks": [
+      {
+        "name": "Poison Charm I",
+        "description": "A charm that grants the Poison Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 196
+          }
+        ]
+      },
+      {
+        "name": "Poison Charm II",
+        "description": "A charm that grants the Poison Resistance skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 197
+          }
+        ]
+      },
+      {
+        "name": "Poison Charm III",
+        "description": "A charm that grants the Poison Resistance skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 198
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Paralysis Charm",
+    "ranks": [
+      {
+        "name": "Paralysis Charm I",
+        "description": "A charm that grants the Paralysis Resistance skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 199
+          }
+        ]
+      },
+      {
+        "name": "Paralysis Charm II",
+        "description": "A charm that grants the Paralysis Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 200
+          }
+        ]
+      },
+      {
+        "name": "Paralysis Charm III",
+        "description": "A charm that grants the Paralysis Resistance skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 201
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sleep Charm",
+    "ranks": [
+      {
+        "name": "Sleep Charm I",
+        "description": "A charm that grants the Sleep Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 202
+          }
+        ]
+      },
+      {
+        "name": "Sleep Charm II",
+        "description": "A charm that grants the Sleep Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 203
+          }
+        ]
+      },
+      {
+        "name": "Sleep Charm III",
+        "description": "A charm that grants the Sleep Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 204
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Stun Charm",
+    "ranks": [
+      {
+        "name": "Stun Charm I",
+        "description": "A charm that grants the Stun Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 211
+          }
+        ]
+      },
+      {
+        "name": "Stun Charm II",
+        "description": "A charm that grants the Stun Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 212
+          }
+        ]
+      },
+      {
+        "name": "Stun Charm III",
+        "description": "A charm that grants the Stun Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 213
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blast Charm",
+    "ranks": [
+      {
+        "name": "Blast Charm I",
+        "description": "A charm that grants the Blast Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 220
+          }
+        ]
+      },
+      {
+        "name": "Blast Charm II",
+        "description": "A charm that grants the Blast Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 221
+          }
+        ]
+      },
+      {
+        "name": "Blast Charm III",
+        "description": "A charm that grants the Blast Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 222
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Botany Charm",
+    "ranks": [
+      {
+        "name": "Botany Charm I",
+        "description": "A charm that grants the Botanist skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 359
+          }
+        ]
+      },
+      {
+        "name": "Botany Charm II",
+        "description": "A charm that grants the Botanist skill.",
+        "level": 2,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 360
+          }
+        ]
+      },
+      {
+        "name": "Botany Charm III",
+        "description": "A charm that grants the Botanist skill.",
+        "level": 3,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 361
+          }
+        ]
+      },
+      {
+        "name": "Botany Charm IV",
+        "description": "A charm that grants the Botanist skill.",
+        "level": 4,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 362
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Geology Charm",
+    "ranks": [
+      {
+        "name": "Geology Charm I",
+        "description": "A charm that grants the Geologist skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 363
+          }
+        ]
+      },
+      {
+        "name": "Geology Charm II",
+        "description": "A charm that grants the Geologist skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 364
+          }
+        ]
+      },
+      {
+        "name": "Geology Charm III",
+        "description": "A charm that grants the Geologist skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 365
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Breaker Charm",
+    "ranks": [
+      {
+        "name": "Breaker Charm I",
+        "description": "A charm that grants the Partbreaker skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 285
+          }
+        ]
+      },
+      {
+        "name": "Breaker Charm II",
+        "description": "A charm that grants the Partbreaker skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 286
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bombardier Charm",
+    "ranks": [
+      {
+        "name": "Bombardier Charm I",
+        "description": "A charm that grants the Bombardier skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 346
+          }
+        ]
+      },
+      {
+        "name": "Bombardier Charm II",
+        "description": "A charm that grants the Bombardier skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 347
+          }
+        ]
+      },
+      {
+        "name": "Bombardier Charm III",
+        "description": "A charm that grants the Bombardier skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 348
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mushroom Charm",
+    "ranks": [
+      {
+        "name": "Mushroom Charm I",
+        "description": "A charm that grants the Mushroomancer skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 349
+          }
+        ]
+      },
+      {
+        "name": "Mushroom Charm II",
+        "description": "A charm that grants the Mushroomancer skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 350
+          }
+        ]
+      },
+      {
+        "name": "Mushroom Charm III",
+        "description": "A charm that grants the Mushroomancer skill.",
+        "level": 3,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 351
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Extension Charm",
+    "ranks": [
+      {
+        "name": "Extension Charm I",
+        "description": "A charm that grants the Item Prolonger skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 352
+          }
+        ]
+      },
+      {
+        "name": "Extension Charm II",
+        "description": "A charm that grants the Item Prolonger skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 353
+          }
+        ]
+      },
+      {
+        "name": "Extension Charm III",
+        "description": "A charm that grants the Item Prolonger skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 354
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Friendship Charm",
+    "ranks": [
+      {
+        "name": "Friendship Charm I",
+        "description": "A charm that grants the Wide- Range skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 336
+          }
+        ]
+      },
+      {
+        "name": "Friendship Charm II",
+        "description": "A charm that grants the Wide- Range skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 337
+          }
+        ]
+      },
+      {
+        "name": "Friendship Charm III",
+        "description": "A charm that grants the Wide- Range skill.",
+        "level": 3,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 338
+          }
+        ]
+      },
+      {
+        "name": "Friendship Charm IV",
+        "description": "A charm that grants the Wide- Range skill.",
+        "level": 4,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 339
+          }
+        ]
+      },
+      {
+        "name": "Friendship Charm V",
+        "description": "A charm that grants the Wide- Range skill.",
+        "level": 5,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 340
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Light Eater's Charm",
+    "ranks": [
+      {
+        "name": "Light Eater's Charm I",
+        "description": "A charm that grants the Free Meal skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 355
+          }
+        ]
+      },
+      {
+        "name": "Light Eater's Charm II",
+        "description": "A charm that grants the Free Meal skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 356
+          }
+        ]
+      },
+      {
+        "name": "Light Eater's Charm III",
+        "description": "A charm that grants the Free Meal skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 357
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grit Charm",
+    "ranks": [
+      {
+        "name": "Grit Charm I",
+        "description": "A charm that grants the Heroics skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 260
+          }
+        ]
+      },
+      {
+        "name": "Grit Charm II",
+        "description": "A charm that grants the Heroics skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 261
+          }
+        ]
+      },
+      {
+        "name": "Grit Charm III",
+        "description": "A charm that grants the Heroics skill.",
+        "level": 3,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 262
+          }
+        ]
+      },
+      {
+        "name": "Grit Charm IV",
+        "description": "A charm that grants the Heroics skill.",
+        "level": 4,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 263
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Impact Charm",
+    "ranks": [
+      {
+        "name": "Impact Charm I",
+        "description": "A charm that grants the Flinch Free skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 321
+          }
+        ]
+      },
+      {
+        "name": "Impact Charm II",
+        "description": "A charm that grants the Flinch Free skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 322
+          }
+        ]
+      },
+      {
+        "name": "Impact Charm III",
+        "description": "A charm that grants the Flinch Free skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 323
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hungerless Charm",
+    "ranks": [
+      {
+        "name": "Hungerless Charm I",
+        "description": "A charm that grants the Hunger Resistance skill.",
+        "level": 1,
+        "rarity": 2,
+        "skills": [
+          {
+            "id": 247
+          }
+        ]
+      },
+      {
+        "name": "Hungerless Charm II",
+        "description": "A charm that grants the Hunger Resistance skill.",
+        "level": 2,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 248
+          }
+        ]
+      },
+      {
+        "name": "Hungerless Charm III",
+        "description": "A charm that grants the Hunger Resistance skill.",
+        "level": 3,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 249
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Counter Charm",
+    "ranks": [
+      {
+        "name": "Counter Charm I",
+        "description": "A charm that grants the Counterstrike skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 157
+          }
+        ]
+      },
+      {
+        "name": "Counter Charm II",
+        "description": "A charm that grants the Counterstrike skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 158
+          }
+        ]
+      },
+      {
+        "name": "Counter Charm III",
+        "description": "A charm that grants the Counterstrike skill.",
+        "level": 3,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 159
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Foray Charm",
+    "ranks": [
+      {
+        "name": "Foray Charm I",
+        "description": "A charm that grants the Foray skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 270
+          }
+        ]
+      },
+      {
+        "name": "Foray Charm II",
+        "description": "A charm that grants the Foray skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 271
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phoenix Charm",
+    "ranks": [
+      {
+        "name": "Phoenix Charm I",
+        "description": "A charm that grants the Coalescence skill.",
+        "level": 1,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 288
+          }
+        ]
+      },
+      {
+        "name": "Phoenix Charm II",
+        "description": "A charm that grants the Coalescence skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 289
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chain Charm",
+    "ranks": [
+      {
+        "name": "Chain Charm I",
+        "description": "A charm that grants the Burst skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 265
+          }
+        ]
+      },
+      {
+        "name": "Chain Charm II",
+        "description": "A charm that grants the Burst skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 266
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Counterattack Charm",
+    "ranks": [
+      {
+        "name": "Counterattack Charm I",
+        "description": "A charm that grants the Adrenaline Rush skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 147
+          }
+        ]
+      },
+      {
+        "name": "Counterattack Charm II",
+        "description": "A charm that grants the Adrenaline Rush skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 148
+          }
+        ]
+      },
+      {
+        "name": "Counterattack Charm III",
+        "description": "A charm that grants the Adrenaline Rush skill.",
+        "level": 3,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 149
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Descent Charm",
+    "ranks": [
+      {
+        "name": "Descent Charm I",
+        "description": "A charm that grants the Ambush skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 291
+          }
+        ]
+      },
+      {
+        "name": "Descent Charm II",
+        "description": "A charm that grants the Ambush skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 292
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bleed Charm",
+    "ranks": [
+      {
+        "name": "Bleed Charm I",
+        "description": "A charm that grants the Bleeding Resistance skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 214
+          }
+        ]
+      },
+      {
+        "name": "Bleed Charm II",
+        "description": "A charm that grants the Bleeding Resistance skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 215
+          }
+        ]
+      },
+      {
+        "name": "Bleed Charm III",
+        "description": "A charm that grants the Bleeding Resistance skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 216
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Guard Charm",
+    "ranks": [
+      {
+        "name": "Guard Charm I",
+        "description": "A charm that grants the Iron Skin skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 205
+          }
+        ]
+      },
+      {
+        "name": "Guard Charm II",
+        "description": "A charm that grants the Iron Skin skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 206
+          }
+        ]
+      },
+      {
+        "name": "Guard Charm III",
+        "description": "A charm that grants the Iron Skin skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 207
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Survival Charm",
+    "ranks": [
+      {
+        "name": "Survival Charm I",
+        "description": "A charm that grants the Survival Expert skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 233
+          }
+        ]
+      },
+      {
+        "name": "Survival Charm II",
+        "description": "A charm that grants the Survival Expert skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 234
+          }
+        ]
+      },
+      {
+        "name": "Survival Charm III",
+        "description": "A charm that grants the Survival Expert skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 235
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Maintenance Charm",
+    "ranks": [
+      {
+        "name": "Maintenance Charm I",
+        "description": "A charm that grants the Tool Specialist skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 341
+          }
+        ]
+      },
+      {
+        "name": "Maintenance Charm II",
+        "description": "A charm that grants the Tool Specialist skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 342
+          }
+        ]
+      },
+      {
+        "name": "Maintenance Charm III",
+        "description": "A charm that grants the Tool Specialist skill.",
+        "level": 3,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 343
+          }
+        ]
+      },
+      {
+        "name": "Maintenance Charm IV",
+        "description": "A charm that grants the Tool Specialist skill.",
+        "level": 4,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 344
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Intimidator Charm",
+    "ranks": [
+      {
+        "name": "Intimidator Charm I",
+        "description": "A charm that grants the Intimidator skill.",
+        "level": 1,
+        "rarity": 3,
+        "skills": [
+          {
+            "id": 324
+          }
+        ]
+      },
+      {
+        "name": "Intimidator Charm II",
+        "description": "A charm that grants the Intimidator skill.",
+        "level": 2,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 325
+          }
+        ]
+      },
+      {
+        "name": "Intimidator Charm III",
+        "description": "A charm that grants the Intimidator skill.",
+        "level": 3,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 326
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Escape Charm",
+    "ranks": [
+      {
+        "name": "Escape Charm I",
+        "description": "A charm that grants the Bind Resistance skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 217
+          }
+        ]
+      },
+      {
+        "name": "Escape Charm II",
+        "description": "A charm that grants the Bind Resistance skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 218
+          }
+        ]
+      },
+      {
+        "name": "Escape Charm III",
+        "description": "A charm that grants the Bind Resistance skill.",
+        "level": 3,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 219
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chainblade Charm",
+    "ranks": [
+      {
+        "name": "Chainblade Charm I",
+        "description": "A charm that grants the Flayer skill.",
+        "level": 1,
+        "rarity": 4,
+        "skills": [
+          {
+            "id": 275
+          }
+        ]
+      },
+      {
+        "name": "Chainblade Charm II",
+        "description": "A charm that grants the Flayer skill.",
+        "level": 2,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 276
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Imbibe Charm",
+    "ranks": [
+      {
+        "name": "Imbibe Charm I",
+        "description": "A charm that grants the Elemental Absorption skill.",
+        "level": 1,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 297
+          }
+        ]
+      },
+      {
+        "name": "Imbibe Charm II",
+        "description": "A charm that grants the Elemental Absorption skill.",
+        "level": 2,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 298
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Convert Charm",
+    "ranks": [
+      {
+        "name": "Convert Charm I",
+        "description": "A charm that grants the Convert Element skill.",
+        "level": 1,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 168
+          }
+        ]
+      },
+      {
+        "name": "Convert Charm II",
+        "description": "A charm that grants the Convert Element skill.",
+        "level": 2,
+        "rarity": 8,
+        "skills": [
+          {
+            "id": 169
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sanity Charm",
+    "ranks": [
+      {
+        "name": "Sanity Charm I",
+        "description": "A charm that grants the Antivirus skill.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 294
+          }
+        ]
+      },
+      {
+        "name": "Sanity Charm II",
+        "description": "A charm that grants the Antivirus skill.",
+        "level": 2,
+        "rarity": 6,
+        "skills": [
+          {
+            "id": 295
+          }
+        ]
+      },
+      {
+        "name": "Sanity Charm III",
+        "description": "A charm that grants the Antivirus skill.",
+        "level": 3,
+        "rarity": 7,
+        "skills": [
+          {
+            "id": 296
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hope Charm",
+    "ranks": [
+      {
+        "name": "Hope Charm",
+        "description": "A charm that grants the Self- Improvement and Recovery Up skills.",
+        "level": 1,
+        "rarity": 5,
+        "skills": [
+          {
+            "id": 300
+          },
+          {
+            "id": 227
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rice Ball Charm",
+    "ranks": [
+      {
+        "name": "Rice Ball Charm",
+        "description": "A charm that grants the Rice Ball skill. (Arena Quests only.)",
+        "level": 1,
+        "rarity": 1,
+        "skills": [
+          {
+            "id": 368
+          }
+        ]
+      }
+    ]
+  }
+]
