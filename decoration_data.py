@@ -22,7 +22,7 @@ Get decorations page url from homepage
 """
 def find_decorations_page_url() -> Optional[str]:
   try:
-    res = requests.get(config.BASE_URL).content
+    res = requests.get(config.BASE_URL_OTHER).content
     soup = BeautifulSoup(res, 'html.parser')
     homepage = soup.find(attrs={'data-sidebar': 'group-content'})
     
@@ -32,7 +32,7 @@ def find_decorations_page_url() -> Optional[str]:
     links = homepage.find_all('a')
     for item in links:
       if item.text == 'Decorations' and 'href' in item.attrs:
-        return requests.compat.urljoin(config.BASE_URL, item['href'])
+        return requests.compat.urljoin(config.BASE_URL_OTHER, item['href'])
     
     return None
   except Exception as e:
@@ -57,7 +57,7 @@ def find_next_decoration_url(nav) -> Optional[str]:
     if len(nav_items) > 1:
       next_deco = nav_items[1].find('a')
       if next_deco and 'href' in next_deco.attrs:
-        return requests.compat.urljoin(config.BASE_URL, next_deco['href'])
+        return requests.compat.urljoin(config.BASE_URL_OTHER, next_deco['href'])
       
     return None
   except Exception as e:
@@ -72,7 +72,7 @@ def get_first_decoration_url(soup: BeautifulSoup) -> Optional[str]:
     link = soup.find('tbody').find('tr').find('a')
       
     if link.text == 'Attack Jewel [1]' and 'href' in link.attrs:
-      return requests.compat.urljoin(config.BASE_URL, link['href'])
+      return requests.compat.urljoin(config.BASE_URL_OTHER, link['href'])
       
     print("First decoration link is not Attack Jewel [1] or does not have href attribute.")
     return None

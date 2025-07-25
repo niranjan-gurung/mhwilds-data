@@ -21,7 +21,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 Get armours page url from homepage
 """
 def find_armours_page_url() -> Optional[str]:
-  res = requests.get(config.BASE_URL).content
+  res = requests.get(config.BASE_URL_OTHER).content
   soup = BeautifulSoup(res, 'html.parser')
   homepage = soup.find(attrs={'data-sidebar': 'group-content'})
   if not homepage: 
@@ -31,7 +31,7 @@ def find_armours_page_url() -> Optional[str]:
   
   for item in links:
     if item.text == 'Armor' and 'href' in item.attrs:
-      return requests.compat.urljoin(config.BASE_URL, item['href'])
+      return requests.compat.urljoin(config.BASE_URL_OTHER, item['href'])
     
   return None
 
@@ -210,7 +210,7 @@ def parse_armour(
       
       if next_armour and 'href' in next_armour.attrs:
         href = next_armour['href']
-        next_armour_url = requests.compat.urljoin(config.BASE_URL, href)
+        next_armour_url = requests.compat.urljoin(config.BASE_URL_OTHER, href)
         print(f"Found next armour set: {next_armour_url}")
         
         time.sleep(config.RATE_LIMIT)
@@ -238,7 +238,7 @@ def get_first_armour_url(soup: BeautifulSoup) -> Optional[str]:
                .find('a')
     
     if link.text == 'Hope' and 'href' in link.attrs:
-      return requests.compat.urljoin(config.BASE_URL, link['href'])
+      return requests.compat.urljoin(config.BASE_URL_OTHER, link['href'])
     
     print('first armour link is not Hope or does not contain href attribute')
     return None

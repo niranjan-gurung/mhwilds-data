@@ -23,7 +23,7 @@ def get_skills_by_type(skill_rows: list, skill_type: str) -> list[dict]:
 
     try:
       href = skill_link['href']
-      skill_details = requests.compat.urljoin(config.BASE_URL, href)
+      skill_details = requests.compat.urljoin(config.BASE_URL_OTHER, href)
       res = requests.get(skill_details).content
       soup = BeautifulSoup(res, 'html.parser')
 
@@ -73,7 +73,7 @@ def extract_skill_ranks(soup: BeautifulSoup) -> list[dict]:
 Get skills page url from homepage
 """
 def find_skills_page_url() -> Optional[str]:
-  res = requests.get(config.BASE_URL).content
+  res = requests.get(config.BASE_URL_OTHER).content
   soup = BeautifulSoup(res, 'html.parser')
   homepage = soup.find(attrs={'data-sidebar': 'group-content'})
   if not homepage: 
@@ -83,7 +83,7 @@ def find_skills_page_url() -> Optional[str]:
 
   for item in links:
     if item.text == 'Skills' and 'href' in item.attrs:
-      return requests.compat.urljoin(config.BASE_URL, item['href'])
+      return requests.compat.urljoin(config.BASE_URL_OTHER, item['href'])
   
   return None
 

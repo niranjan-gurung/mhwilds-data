@@ -163,7 +163,7 @@ Get charms page url from homepage
 """
 def find_charms_page_url() -> Optional[str]:  
   try:
-    res = requests.get(config.BASE_URL).content
+    res = requests.get(config.BASE_URL_OTHER).content
     soup = BeautifulSoup(res, 'html.parser')
     homepage = soup.find(attrs={'data-sidebar': 'group-content'})
     if not homepage: 
@@ -173,7 +173,7 @@ def find_charms_page_url() -> Optional[str]:
 
     for item in links:
       if item.text == 'Charms' and 'href' in item.attrs:
-        return requests.compat.urljoin(config.BASE_URL, item['href'])
+        return requests.compat.urljoin(config.BASE_URL_OTHER, item['href'])
     return None
   except Exception as e:
     print(f"Error finding charms page URL: {e}")
@@ -189,7 +189,7 @@ def get_first_charm_url(soup: BeautifulSoup) -> Optional[str]:
                .find('a')
 
     if link.text == 'Marathon Charm I' and 'href' in link.attrs:
-      return requests.compat.urljoin(config.BASE_URL, link['href'])
+      return requests.compat.urljoin(config.BASE_URL_OTHER, link['href'])
     
     print("First charm link is not Marathon Charm I or does not have href attribute.")
     return None
@@ -207,7 +207,7 @@ def find_next_charm_url(soup: BeautifulSoup) -> Optional[str]:
                     .find('a')
 
     if next_charm and 'href' in next_charm.attrs:
-      return requests.compat.urljoin(config.BASE_URL, next_charm['href'])
+      return requests.compat.urljoin(config.BASE_URL_OTHER, next_charm['href'])
     return None
   except Exception as e:
     print(f'Error finding next charm URL: {e}')
