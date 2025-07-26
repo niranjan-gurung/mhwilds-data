@@ -11,40 +11,81 @@ from utils.common import (
   get_skill_rank_data
 )
 
-res = requests.get(config.BASE_URL_WEAPON)
-soup = BeautifulSoup(res.text, 'html.parser')
+"""
+Get weapons page url from homepage
+"""
+def find_weapons_page_url() -> Optional[str]:
+  res = requests.get(config.BASE_URL_WEAPON)
+  soup = BeautifulSoup(res.text, 'html.parser')
+  homepage = soup.find(attrs={'class': 'cards-container'})
+  if not homepage: 
+    return None
 
-# main homepage
-homepage = soup.find(attrs={'class': 'cards-container'})
-if not homepage: 
-  print('homepage not found')
+  weapon_url = homepage.find('a')
 
-# weapon link
-weapon_url = homepage.find('a')
-if weapon_url.get_text(strip=True) == 'Weapons' and 'href' in weapon_url.attrs:
-  # build weapon link url
-  link = requests.compat.urljoin(config.BASE_URL_WEAPON, weapon_url['href'])
-  print(f'link: {link}')
+  if weapon_url.get_text(strip=True) == 'Weapons' and 'href' in weapon_url.attrs:
+    return requests.compat.urljoin(config.BASE_URL_WEAPON, weapon_url['href'])
+    
+  return None
 
-# go to weapon page
-res = requests.get(link)
-soup = BeautifulSoup(res.text, 'html.parser')
+def get_weapon_type(soup: BeautifulSoup):
+  links = soup.find('section', class_='weapons-grid').find_all('a')
 
-# hero section
-print(f'h1:   {soup.find('h1').text}')
-print(f'p:    {soup.find('p').text}')
+  for item in links:
+    if item.get_text(strip=True) == 'Great Sword' and 'href' in item.attrs:
+      return requests.compat.urljoin(config.BASE_URL_WEAPON, item['href'])
+
+"""
+Find link to first weapon
+"""
+def get_first_weapon_url(soup: BeautifulSoup):
+  """
+  need to go into weapon type first, 
+  THEN
+  you get the first weapon of that type 
+  """
+  # hero section
+  print(f'h1:   {soup.find('h1').text}')
+  print(f'p:    {soup.find('p').text}')
+
+def parse_weapon():
+  pass
 
 """
 Scrapes weapon data from the website (url2) and builds weapon object,
 matches weapon model/schema from API
 """
 def get_weapon_data() -> list[dict]:
-  print('building skills lookup...')
-  skills_lookup = build_skills_lookup()
-  if not skills_lookup:
-    print("Failed to build skills lookup. Check API connection.")
-    return []
+  # print('building skills lookup...')
+  # skills_lookup = build_skills_lookup()
+  # if not skills_lookup:
+  #   print("Failed to build skills lookup. Check API connection.")
+  #   return []
   
+  # navigate to the weapon page
+  print('finding weapons page...')
+  try:
+    weapons_page_url = find_weapons_page_url()
+    if not weapons_page_url:
+      print("Could not find the weapon page link.")
+      return []
+
+    # navigate into the weapons page:
+    res = requests.get(weapons_page_url)
+    soup = BeautifulSoup(res.text, 'html.parser')
+
+    # get first weapon type
+    weapon_type = get_weapon_type(soup)
+    #first_weapon_url = get_first_weapon_url(soup)
+    # if not first_weapon_url:
+    #   return []
+    
+  except Exception as e:
+    print(f'Error in get_weapon_data: {e}')
+    return []  
+
+get_weapon_data()
+
 """
 Posts the scraped weapon data to the API
 """
