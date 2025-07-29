@@ -3,13 +3,58 @@ import requests
 import requests.compat
 import json
 import config
+import time
 from utils.dump_json import dump_json
 from typing import Optional
+
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.webdriver import WebDriver
 
 from utils.common import (
   build_skills_lookup, 
   get_skill_rank_data
 )
+
+"""
+weapon object to match in API:
+
+// greatsword example:
+{
+  "name": "..",
+  "description": "..",          // this will remain empty
+  "weapontype": "GreatSword",   // this will need to match enum types in API
+  "defense": 0 or null,
+  "rarity": 1,
+  "slots": [],
+  "affinity": 15 (0.15 in page source),   // * 100 multiplier 
+  "damage": {
+    "raw": 15,
+    "display": 120
+  },
+  "element": null,
+  "sharpness": {
+    "red": 40,
+    "orange": 50,
+    "yellow": 50,
+    "green": 60,
+    "blue": 0,
+    "white": 0
+  },
+  "skills": [     // references existing skill rank ids
+    {
+      "id": 3
+    },
+    {
+      "id": 8
+    }
+  ]
+}
+"""
 
 """
 Get weapons page url from homepage
@@ -28,28 +73,94 @@ def find_weapons_page_url() -> Optional[str]:
     
   return None
 
-def get_weapon_type(soup: BeautifulSoup):
-  links = soup.find('section', class_='weapons-grid').find_all('a')
-
-  for item in links:
-    if item.get_text(strip=True) == 'Great Sword' and 'href' in item.attrs:
-      return requests.compat.urljoin(config.BASE_URL_WEAPON, item['href'])
-
 """
-Find link to first weapon
+Loads into the 'Weapons' page and waits for weapon type links-
+to be loaded in dynamically. It then grabs and returns the weapon specific-
+link defined by the 'type' variable passed in the method parameter
 """
-def get_first_weapon_url(soup: BeautifulSoup):
-  """
-  need to go into weapon type first, 
-  THEN
-  you get the first weapon of that type 
-  """
-  # hero section
-  print(f'h1:   {soup.find('h1').text}')
-  print(f'p:    {soup.find('p').text}')
+def load_weapon_type_page(driver: WebDriver, url: str, type: str) -> Optional[str]:
+  try:
+    # request weapons page url
+    print(f'Getting weapon type URL for: {type}')
+    driver.get(url)
 
-def parse_weapon():
-  pass
+    WebDriverWait(driver, 10).until(
+      EC.presence_of_all_elements_located((By.CLASS_NAME, 'weapons-grid'))
+    )
+
+    # wait for dynamic content to load (weapon type links)
+    time.sleep(2)
+
+    html = driver.page_source
+    soup = BeautifulSoup(html, 'html.parser')
+    
+    # page contains a list of links representing all weapon types
+    links = soup.find('section', class_='weapons-grid').find_all('a')
+
+    # get url for specific weapon defined by type
+    for item in links:
+      if item.get_text(strip=True) == type and 'href' in item.attrs:
+        return requests.compat.urljoin(config.BASE_URL_WEAPON, item['href'])
+    return None
+  
+  except Exception as e:
+    print(f'Error getting weapon type URL: {e}')
+    return None
+
+def load_weapon_type_specific_page(driver: WebDriver, url: str) -> Optional[BeautifulSoup]:
+  """
+  Scrape weapon page using Selenium
+  """
+  try:
+    print(f'Using Selenium to scrape: {url}')
+    driver.get(url)
+    
+    # wait for the main content to load
+    WebDriverWait(driver, 10).until(
+      EC.presence_of_element_located((By.CLASS_NAME, 'ext-table'))
+    )
+    
+    # wait a bit more for all content to load
+    time.sleep(2)
+    
+    html = driver.page_source
+    soup = BeautifulSoup(html, 'html.parser')
+    
+    if soup:
+      print(f'Successfully loaded page')
+      return soup
+
+  except Exception as e:
+    print(f'Error scraping with Selenium: {e}')
+    return None
+
+def parse_weapon(soup: BeautifulSoup) -> list[dict]:
+  weapons = []
+  
+  try:
+    ths = soup.find('thead').find_all('th')
+
+    for th in ths:
+      print(th.get_text(strip=True))
+
+    # # Get the page title
+    # h1 = soup.find('h1')
+    # p = soup.find('p').text
+    # if h1:
+    #   weapon_type = h1.get_text(strip=True)
+    #   print(f'Parsing weapons for: {weapon_type}')
+    
+    # # Add your weapon parsing logic here
+    # # For now, just return basic info
+    # weapons.append({
+    #   'type': weapon_type if h1 else 'Unknown',
+    #   'desc': p
+    # })
+    
+  except Exception as e:
+    print(f'Error parsing weapons: {e}')
+  
+  return weapons
 
 """
 Scrapes weapon data from the website (url2) and builds weapon object,
@@ -67,19 +178,35 @@ def get_weapon_data() -> list[dict]:
   try:
     weapons_page_url = find_weapons_page_url()
     if not weapons_page_url:
-      print("Could not find the weapon page link.")
+      print('Could not find the weapon page link.')
       return []
 
-    # navigate into the weapons page:
-    res = requests.get(weapons_page_url)
-    soup = BeautifulSoup(res.text, 'html.parser')
+    options = Options()
+    service = Service(executable_path='chromedriver.exe')
+    driver = webdriver.Chrome(service=service, options=options)
 
-    # get first weapon type
-    weapon_type = get_weapon_type(soup)
-    #first_weapon_url = get_first_weapon_url(soup)
-    # if not first_weapon_url:
-    #   return []
+    # navigate into the weapons page:
+    # get first weapon type (great sword)
+    try:
+      weapon_type_page = load_weapon_type_page(driver, weapons_page_url, 'Great Sword')
+      
+      if not weapon_type_page:
+        print('Could not find the weapon type link.')
+        return []
     
+      soup = load_weapon_type_specific_page(driver, weapon_type_page)
+
+      if not soup:
+        print('Failed to load weapon page content.')
+        return []
+    
+      weapons = parse_weapon(soup)
+      print(weapons)
+      return weapons
+    
+    finally:
+      driver.quit()
+
   except Exception as e:
     print(f'Error in get_weapon_data: {e}')
     return []  
