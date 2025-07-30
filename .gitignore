@@ -1,5 +1,13 @@
 *.pyc
 __pycache__/
 
+# environment
 env
 .env
+
+# web driver manager cache
+.wdm/
+
+# chrome drivers
+chromedriver.exe
+chromedriver

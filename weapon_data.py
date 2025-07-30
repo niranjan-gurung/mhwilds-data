@@ -4,6 +4,7 @@ import requests.compat
 import json
 import config
 import time
+import os
 from utils.dump_json import dump_json
 from typing import Optional
 
@@ -14,6 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.webdriver import WebDriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 from utils.common import (
   build_skills_lookup, 
@@ -55,6 +57,67 @@ weapon object to match in API:
   ]
 }
 """
+
+"""
+Return potential path for chrome exe,
+if defined path is not found, selenium will use default
+system path (may break as it might use an older version of chrome)
+"""
+def get_chrome_binary_path() -> Optional[str]:
+  """
+  Try to find Chrome binary path automatically
+  """
+  possible_paths = [
+    r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+    r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+    "/usr/bin/google-chrome",
+    "/usr/bin/chromium-browser",
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+  ]
+  
+  for path in possible_paths:
+    if os.path.exists(path):
+      return path
+  
+  # selenium will use system default
+  return None
+
+"""
+Setup chrome driver
+"""
+def get_driver(headless: bool = False) -> WebDriver:
+  options = Options()
+
+  options.add_argument('--no-sandbox')
+  options.add_argument('--disable-dev-shm-usage')
+  options.add_argument('--disable-gpu')
+  options.add_argument('--disable-extensions')
+  options.add_argument('--disable-logging')
+  
+  # setup headless mode
+  if headless:
+    options.add_argument('--headless=new')
+
+  chrome_path = get_chrome_binary_path()
+  if chrome_path:
+    options.binary_location = chrome_path
+    print(f"Using Chrome binary at: {chrome_path}")
+  else:
+    print("Using system default Chrome installation")
+  
+  try:
+    # auto handle chrome version
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
+    
+    # implicit wait
+    driver.implicitly_wait(10)
+    
+    return driver
+      
+  except Exception as e:
+    print(f"Error creating WebDriver: {e}")
+    raise
 
 """
 Get weapons page url from homepage
@@ -181,9 +244,7 @@ def get_weapon_data() -> list[dict]:
       print('Could not find the weapon page link.')
       return []
 
-    options = Options()
-    service = Service(executable_path='chromedriver.exe')
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = get_driver()
 
     # navigate into the weapons page:
     # get first weapon type (great sword)
