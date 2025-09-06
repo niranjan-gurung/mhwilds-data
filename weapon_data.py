@@ -8,6 +8,8 @@ import os
 from utils.dump_json import dump_json
 from typing import Optional
 
+import pprint
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -200,29 +202,59 @@ def load_weapon_type_specific_page(driver: WebDriver, url: str) -> Optional[Beau
 def parse_weapon(soup: BeautifulSoup) -> list[dict]:
   weapons = []
   
-  try:
-    ths = soup.find('thead').find_all('th')
+  table = soup.find('tbody')
+  rows = table.find_all('tr')
 
-    for th in ths:
-      print(th.get_text(strip=True))
+  for row in rows:
+    cells = row.find_all('td')
 
-    # # Get the page title
-    # h1 = soup.find('h1')
-    # p = soup.find('p').text
-    # if h1:
-    #   weapon_type = h1.get_text(strip=True)
-    #   print(f'Parsing weapons for: {weapon_type}')
-    
-    # # Add your weapon parsing logic here
-    # # For now, just return basic info
-    # weapons.append({
-    #   'type': weapon_type if h1 else 'Unknown',
-    #   'desc': p
-    # })
-    
-  except Exception as e:
-    print(f'Error parsing weapons: {e}')
-  
+    def get_cell_text(index):
+      return cells[index].get_text(strip=True)
+
+    try:
+      weapon = {
+        'name': get_cell_text(0),
+        'desc': '',
+        'weapontype': 'Great Sword',
+        'defense': 0 if get_cell_text(7) == '' else get_cell_text(7),
+        'rarity': get_cell_text(3),
+        # if slot column is empty, then don't append anything into slot list
+        'slots': [
+          int(val) for i in [22, 23, 24] if (val := get_cell_text(i)) != ''
+        ],
+        'affinity': 0 if get_cell_text(6) == '' else int(round(float(get_cell_text(6)) * 100)),
+        'damage': {
+          'display': int(get_cell_text(4)),
+          'raw': int(get_cell_text(5))
+        },
+      }
+      
+      ele_text = get_cell_text(8)
+      if ele_text and ele_text != '-':
+        weapon['element'] = {
+          'type': ele_text,
+          'display': int(get_cell_text(9)),
+          'raw': str(int(get_cell_text(9)) / 10)
+        }
+      else:
+        weapon['element'] = {}
+
+      weapon['sharpness'] = {
+        'red': get_cell_text(10),
+        'orange': get_cell_text(11),
+        'yellow': get_cell_text(12),
+        'green': get_cell_text(13),
+        'blue': get_cell_text(14),
+        'white': get_cell_text(15),
+        'purple': 0
+      }
+
+      weapon['skills'] = []
+      weapons.append(weapon)
+
+    except Exception as e:
+      print(f'Error parsing weapons: {e}')
+
   return weapons
 
 """
