@@ -8,8 +8,6 @@ import os
 from utils.dump_json import dump_json
 from typing import Optional
 
-import pprint
-
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -24,41 +22,17 @@ from utils.common import (
   get_skill_rank_data
 )
 
-"""
-weapon object to match in API:
+from entities.weapon_parser import (
+  BaseWeapon, 
+  GenericMeleeParser
+)
 
-// greatsword example:
-{
-  "name": "..",
-  "description": "..",          // this will remain empty
-  "weapontype": "GreatSword",   // this will need to match enum types in API
-  "defense": 0 or null,
-  "rarity": 1,
-  "slots": [],
-  "affinity": 15 (0.15 in page source),   // * 100 multiplier 
-  "damage": {
-    "raw": 15,
-    "display": 120
-  },
-  "element": null,
-  "sharpness": {
-    "red": 40,
-    "orange": 50,
-    "yellow": 50,
-    "green": 60,
-    "blue": 0,
-    "white": 0
-  },
-  "skills": [     // references existing skill rank ids
-    {
-      "id": 3
-    },
-    {
-      "id": 8
-    }
-  ]
-}
-"""
+from entities.weapons import (
+  Gunlance, 
+  ChargeBlade,
+  SwitchAxe,
+  InsectGlaive
+)
 
 WEAPON_TYPES = [
   'Great Sword', 
@@ -76,6 +50,43 @@ WEAPON_TYPES = [
   'Heavy Bowgun',
   'Bow'
 ]
+
+class WeaponParserFactory:
+  """Factory to create appropriate parser for each weapon type"""
+  
+  _parsers = {
+    # melee with special fields
+    'Gunlance': Gunlance,
+    'Charge Blade': ChargeBlade,
+    'Switch Axe': SwitchAxe,
+    'Insect Glaive': InsectGlaive,
+    'Hunting Horn': GenericMeleeParser,   # todo
+    
+    # ranged weapons
+    #'Light Bowgun': LightBowgun,
+    #'Heavy Bowgun': HeavyBowgun,
+    #'Bow': Bow,
+    
+    # generic melee weapons (no special fields beyond sharpness)
+    'Great Sword': GenericMeleeParser,
+    'Long Sword': GenericMeleeParser,
+    'Sword and Shield': GenericMeleeParser,
+    'Dual Blades': GenericMeleeParser,
+    'Hammer': GenericMeleeParser,
+    'Lance': GenericMeleeParser
+  }
+  
+  @classmethod
+  def get_parser(cls, weapon_type: str) -> BaseWeapon:
+    """Get appropriate parser for weapon type"""
+    parser_class = cls._parsers.get(weapon_type, GenericMeleeParser)
+    return parser_class(weapon_type)
+  
+  @classmethod
+  def is_ranged_weapon(cls, weapon_type: str) -> bool:
+    """Check if weapon type is ranged"""
+    ranged_weapons = ['Light Bowgun', 'Heavy Bowgun', 'Bow']
+    return weapon_type in ranged_weapons
 
 """
 Return potential path for chrome exe,
@@ -193,12 +204,12 @@ def get_all_weapon_type_urls(driver: WebDriver, url: str) -> list[tuple[str, str
     print(f'Error getting weapon type URL: {e}')
     return None
 
-def load_weapon_type_specific_page(driver: WebDriver, url: str, type: str) -> Optional[BeautifulSoup]:
+def load_weapon_type_specific_page(driver: WebDriver, url: str) -> Optional[BeautifulSoup]:
   """
   Load and scrape specific weapon page
   """
   try:
-    print(f'Loading {type}, page: {url}')
+    print(f'Loading page: {url}')
     driver.get(url)
     
     # wait for the main content to load
@@ -223,56 +234,16 @@ def load_weapon_type_specific_page(driver: WebDriver, url: str, type: str) -> Op
 def parse_weapon(soup: BeautifulSoup, type: str) -> list[dict]:
   weapons = []
   
+  parser = WeaponParserFactory.get_parser(type)
+
   table = soup.find('tbody')
   rows = table.find_all('tr')
 
   for row in rows:
     cells = row.find_all('td')
 
-    def get_cell_text(index):
-      return cells[index].get_text(strip=True)
-
     try:
-      weapon = {
-        'name': get_cell_text(0),
-        'desc': '',
-        'weapontype': type,
-        'defense': 0 if get_cell_text(7) == '' else int(get_cell_text(7)),
-        'rarity': int(get_cell_text(3)),
-        # if slot column is empty, then don't append anything into slot list
-        'slots': [
-          int(val) for i in [22, 23, 24] if (val := get_cell_text(i)) != ''
-        ],
-        'affinity': 0 if get_cell_text(6) == '' else int(round(float(get_cell_text(6)) * 100)),
-        'damage': {
-          'display': int(get_cell_text(4)),
-          'raw': int(get_cell_text(5))
-        },
-      }
-      
-      ele_text = get_cell_text(8)
-      if ele_text and ele_text != '-':
-        weapon['element'] = {
-          'type': ele_text,
-          'display': int(get_cell_text(9)),
-          'raw': round(int(get_cell_text(9)) / 10)
-        }
-      else:
-        weapon['element'] = {}
-
-      # red, orange, yellow are guaranteed to have values
-      # purple does not currently exist in the game (potentially will be added in master rank)
-      weapon['sharpness'] = {
-        'red': int(get_cell_text(10)),
-        'orange': int(get_cell_text(11)),
-        'yellow': int(get_cell_text(12)),
-        'green': 0 if get_cell_text(13) == '' else int(get_cell_text(13)),
-        'blue': 0 if get_cell_text(14) == '' else int(get_cell_text(14)),
-        'white': 0 if get_cell_text(15) == '' else int(get_cell_text(15)),
-        'purple': 0
-      }
-
-      weapon['skills'] = []
+      weapon = parser.create_weapon(cells)
       weapons.append(weapon)
 
       print(f'Successfully parsed {len(weapons)} {type} weapons')
@@ -307,17 +278,17 @@ def get_weapon_data() -> list[dict]:
     # navigate into the weapons page:
     # get first weapon type (great sword)
     try:
-      weapon_type_url = get_all_weapon_type_urls(driver, weapons_page_url)
+      weapon_type_urls = get_all_weapon_type_urls(driver, weapons_page_url)
       
-      if not weapon_type_url:
+      if not weapon_type_urls:
         print('Could not find the weapon type link.')
         return []
 
-      for weapon_type, weapon_url in weapon_type_url:
+      for weapon_type, weapon_url in weapon_type_urls:
         print(f'\n\t---scraping {weapon_type} ---')
 
         # load specific weapon type page
-        soup = load_weapon_type_specific_page(driver, weapon_url, weapon_type)
+        soup = load_weapon_type_specific_page(driver, weapon_url)
 
         if soup:
           # get all weapons from its specific type page 
@@ -342,6 +313,7 @@ def get_weapon_data() -> list[dict]:
     print(f'Error in get_weapon_data: {e}')
     return []  
 
+# testing
 weapon_data = get_weapon_data()
 dump_json('weapons', weapon_data)
 
