@@ -31,7 +31,8 @@ from entities.weapons import (
   Gunlance, 
   ChargeBlade,
   SwitchAxe,
-  InsectGlaive
+  InsectGlaive,
+  LightBowgun
 )
 
 WEAPON_TYPES = [
@@ -63,7 +64,7 @@ class WeaponParserFactory:
     'Hunting Horn': GenericMeleeParser,   # todo
     
     # ranged weapons
-    #'Light Bowgun': LightBowgun,
+    'Light Bowgun': LightBowgun,
     #'Heavy Bowgun': HeavyBowgun,
     #'Bow': Bow,
     

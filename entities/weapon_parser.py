@@ -1,5 +1,6 @@
 from typing import Any
 from abc import ABC, abstractmethod
+import re
 
 class BaseWeapon(ABC):
   def __init__(self, weapon_type: str):
@@ -101,3 +102,58 @@ class MeleeWeaponParser(BaseWeapon):
 class GenericMeleeParser(MeleeWeaponParser):
   def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
     return self.parse_common_melee_fields(cells)
+  
+class RangedWeaponParser(BaseWeapon):
+  def get_weapon_specific_fields(self) -> dict[str, Any]:
+    return {}
+  
+  def parse_common_ranged_fields(self, cells: list) -> dict[str, Any]:
+    def get_cell_text(index):
+      return cells[index].get_text(strip=True)
+    
+    return {
+        'name': get_cell_text(0),
+        'defense': 0 if get_cell_text(7) == '' else int(get_cell_text(7)),
+        'rarity': int(get_cell_text(3)),
+        # if slot column is empty, then don't append anything into slot list
+        'slot': [
+          int(val) for i in [9, 10, 11] if (val := get_cell_text(i)) != ''
+        ],
+        'affinity': 0 if get_cell_text(6) == '' else int(round(float(get_cell_text(6)) * 100)),
+        'damage': {
+          'raw': int(get_cell_text(5)),
+          'display': int(get_cell_text(4))
+        }
+      }
+  
+  def _parse_ammo_data(self, cells: list) -> list[dict]:
+    def get_cell_text(index):
+      return cells[index].get_text(strip=True)
+    
+    types_raw = get_cell_text(12)
+    levels_raw = get_cell_text(13)
+    capacities_raw = get_cell_text(14)
+    # rapids_raw = False
+
+    types = [ammo_type.strip() for ammo_type in types_raw.split(',')]
+    levels = list(map(int, re.findall(r'\d+', levels_raw)))
+    capacities = list(map(int, re.findall(r'\d+', capacities_raw)))
+
+    ammos = []
+
+    # website ensures all types, levels, capacities have the same length
+    for i in range(len(types)):
+      try:
+        ammo = {
+          'type': types[i],
+          'level': levels[i],
+          'capacity': capacities[i],
+          'rapid': False
+        }
+        ammos.append(ammo)
+ 
+      except (ValueError, IndexError) as e:
+        print(f"Warning: Failed to parse ammo data at index {i}: {e}")
+        continue
+
+    return ammos

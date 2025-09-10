@@ -22098,5 +22098,4488 @@
       "purple": 0
     },
     "kinsectLevel": 8
+  },
+  {
+    "name": "Hope Rifle I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 90,
+      "display": 117
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Hope Rifle II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 100,
+      "display": 130
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Hope Rifle III",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 130,
+      "display": 169
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Hope Rifle IV",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 160,
+      "display": 208
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Hope Rifle V",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 247
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Esperanza Rifle",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "G. Rathling Gun I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 160,
+      "display": 208
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "G. Rathling Gun II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "White Rathling Phoenix",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Dosha Faithbreaker I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 20,
+    "rarity": 2,
+    "slot": [],
+    "affinity": -5,
+    "damage": {
+      "raw": 140,
+      "display": 182
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Dosha Faithbreaker II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 20,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": -5,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Dosha Faithbreaker III",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 20,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": -5,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Faithbreaker Leibolkule",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 20,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": -5,
+    "damage": {
+      "raw": 240,
+      "display": 312
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "G. Veldian Impetum I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 160,
+      "display": 208
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "G. Veldian Impetum II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      2
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "G. Expiating Caius",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 230,
+      "display": 299
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Veldian Impetum I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Expiating Caius",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Dosha Gigasbreaker I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 190,
+      "display": 247
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Dosha Gigasbreaker II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      2
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 220,
+      "display": 286
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Gigasbreaker Urbolkule",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 250,
+      "display": 325
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Chain Blitz I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 120,
+      "display": 156
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Chain Blitz II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 160,
+      "display": 208
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Chain Blitz III",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 247
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "High Chain Blitz",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 286
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Rey Szelatya I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 140,
+      "display": 182
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Rey Szelatya II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 221
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Rey Szelatya III",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Szelatya Clairgun",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 286
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Hunter's Rifle I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 110,
+      "display": 143
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Hunter's Rifle II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 130,
+      "display": 169
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Hunter's Rifle III",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 221
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Hunter's Rifle IV",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Power Rifle",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 230,
+      "display": 299
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Ajara Shellgun I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 10,
+    "damage": {
+      "raw": 130,
+      "display": 169
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Ajara Shellgun II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Ajara-Angaja",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Nu Chobotnice I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 170,
+      "display": 221
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Nu Chobotnice II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Abaddonian Chobotnice",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 230,
+      "display": 299
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Assault Conga I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 5,
+    "damage": {
+      "raw": 120,
+      "display": 156
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Assault Conga II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1,
+      1
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 170,
+      "display": 221
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Combat Conga",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      1
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 220,
+      "display": 286
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Windshear Light I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 140,
+      "display": 182
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Windshear Light II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 221
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Windshear Light III",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Windshear Uchibami",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 286
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Chthonian Gunfire I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 140,
+      "display": 182
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Chthonian Gunfire II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 170,
+      "display": 221
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Bequeathed Animus",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Kut-Ku Anger I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Kut-Ku Anger II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Kut-Ku Counterattack",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 286
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Felling Fulgur I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Fulgursnipe Guardiana",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Valkyrie Fire I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 160,
+      "display": 208
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Valkyrie Fire II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 190,
+      "display": 247
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Valkyrie Flame",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Rathling Gun I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Rathling Phoenix",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "F\u00e4ulnisschleuder I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Wahnschleuder",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Tail String I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 200,
+      "display": 260
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Tail Catapult",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 230,
+      "display": 299
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Wyvernblast"
+  },
+  {
+    "name": "Titan Launcher I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 30,
+    "rarity": 6,
+    "slot": [
+      2,
+      2
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 210,
+      "display": 273
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Titan Panzer",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 30,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 240,
+      "display": 312
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Artian Blaster I",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      2,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 170,
+      "display": 221
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Artian Blaster II",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      2,
+      2,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 180,
+      "display": 234
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Animilater",
+    "description": "",
+    "weaponType": "Light Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      3
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 190,
+      "display": 247
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ],
+    "specialAmmo": "Adhesive Ammo?"
   }
 ]
