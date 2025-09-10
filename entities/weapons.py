@@ -13,7 +13,7 @@ class Gunlance(MeleeWeaponParser):
     }
     return base_fields
   
-  def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     parsed_data = self.parse_common_melee_fields(cells)
 
     def get_cell_text(index):
@@ -34,7 +34,7 @@ class ChargeBlade(MeleeWeaponParser):
     base_fields['phial'] = ''
     return base_fields
   
-  def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     parsed_data = self.parse_common_melee_fields(cells)
 
     def get_cell_text(index):
@@ -55,7 +55,7 @@ class SwitchAxe(MeleeWeaponParser):
     base_fields['phial'] = ''
     return base_fields
   
-  def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     parsed_data = self.parse_common_melee_fields(cells)
 
     def get_cell_text(index):
@@ -76,7 +76,7 @@ class InsectGlaive(MeleeWeaponParser):
     base_fields['kinsectLevel'] = ''
     return base_fields
   
-  def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     parsed_data = self.parse_common_melee_fields(cells)
 
     def get_cell_text(index):
@@ -84,7 +84,10 @@ class InsectGlaive(MeleeWeaponParser):
     
     parsed_data['kinsectLevel'] = int(get_cell_text(25))
     return parsed_data
-  
+
+"""
+Parse light bowgun specific data from table row
+"""
 class LightBowgun(RangedWeaponParser):
   def get_weapon_specific_fields(self) -> dict[str, Any]:
     base_fields = super().get_weapon_specific_fields()
@@ -94,8 +97,8 @@ class LightBowgun(RangedWeaponParser):
     })
     return base_fields
   
-  def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
-    parsed_data = self.parse_common_ranged_fields(cells)
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
+    parsed_data = self.parse_common_ranged_fields(cells, headers)
 
     def get_cell_text(index):
       return cells[index].get_text(strip=True)
@@ -104,32 +107,30 @@ class LightBowgun(RangedWeaponParser):
     parsed_data['specialAmmo'] = get_cell_text(18)
     return parsed_data
   
-# class HeavyBowgun(RangedWeaponParser):
-#   def get_weapon_specific_fields(self) -> dict[str, Any]:
-#     base_fields = super().get_weapon_specific_fields()
-#     base_fields['ammo'] = []
-#     return base_fields
+"""
+Parse heavy bowgun specific data from table row
+"""
+class HeavyBowgun(RangedWeaponParser):
+  def get_weapon_specific_fields(self) -> dict[str, Any]:
+    base_fields = super().get_weapon_specific_fields()
+    base_fields['ammo'] = []
+    return base_fields
   
-#   def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
-#     parsed_data = self.parse_common_ranged_fields(cells)
-
-#     def get_cell_text(index):
-#       return cells[index].get_text(strip=True)
-    
-#     parsed_data['ammo'] = self._parse_ammo_data(cells)
-#     return parsed_data
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
+    parsed_data = self.parse_common_ranged_fields(cells, headers)
+    parsed_data['ammo'] = self._parse_ammo_data(cells)
+    return parsed_data
   
-# class Bow(RangedWeaponParser):
-#   def get_weapon_specific_fields(self) -> dict[str, Any]:
-#     base_fields = super().get_weapon_specific_fields()
-#     base_fields['coating'] = ['']
-#     return base_fields
+"""
+Parse bow specific data from table row
+"""
+class Bow(RangedWeaponParser):
+  def get_weapon_specific_fields(self) -> dict[str, Any]:
+    base_fields = super().get_weapon_specific_fields()
+    base_fields['coating'] = []
+    return base_fields
   
-#   def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
-#     parsed_data = self.parse_common_ranged_fields(cells)
-
-#     def get_cell_text(index):
-#       return cells[index].get_text(strip=True)
-    
-#     parsed_data['coating'] = []
-#     return parsed_data
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
+    parsed_data = self.parse_common_ranged_fields(cells, headers)
+    parsed_data['coating'] = self._parse_coating_data(cells)
+    return parsed_data

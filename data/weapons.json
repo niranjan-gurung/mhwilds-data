@@ -26581,5 +26581,6024 @@
       }
     ],
     "specialAmmo": "Adhesive Ammo?"
+  },
+  {
+    "name": "Hope Cannon I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 90,
+      "display": 135
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Hope Cannon II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 100,
+      "display": 150
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Hope Cannon III",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 130,
+      "display": 195
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Hope Cannon IV",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 160,
+      "display": 240
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Hope Cannon V",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 285
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Esperanza Cannon",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Jin Dhaphal I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 285
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Precipice Malmiam",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Iron Assault I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 120,
+      "display": 180
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Iron Assault II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 160,
+      "display": 240
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Iron Assault III",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 285
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Steel Assault",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 330
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Rompo Sniper I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 140,
+      "display": 210
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Rompo Sniper II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 255
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Rompo Sniper III",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 300
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Rompo Latrotox",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 330
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Chata Sheller I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 15,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 110,
+      "display": 165
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Chata Sheller II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 15,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 150,
+      "display": 225
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Chata Sheller III",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 15,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 180,
+      "display": 270
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Chata Sheller IV",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 15,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Shrouded Muktana",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 15,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 230,
+      "display": 345
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "G. Veldian Tormentum I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 170,
+      "display": 255
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "G. Veldian Tormentum II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      2
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "G. Aeternal Palamedes",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 240,
+      "display": 360
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Veldian Tormentum I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 300
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Aeternal Palamedes",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 330
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Bone Shooter I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 110,
+      "display": 165
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Bone Shooter II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 130,
+      "display": 195
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Bone Shooter III",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 255
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Bone Shooter IV",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 300
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Heavy Shooter",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 230,
+      "display": 345
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Ner Bustergun I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 10,
+    "damage": {
+      "raw": 120,
+      "display": 180
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Ner Bustergun II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 150,
+      "display": 225
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Ner Bustergun III",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 180,
+      "display": 270
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Buster Blaster",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 200,
+      "display": 300
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Uth Dalgap I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": -15,
+    "damage": {
+      "raw": 160,
+      "display": 240
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Uth Dalgap II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 190,
+      "display": 285
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Uth Dalgap III",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 220,
+      "display": 330
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Dalgap-of-the-Waves",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 240,
+      "display": 360
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Power Stinger",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 5,
+    "damage": {
+      "raw": 120,
+      "display": 180
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Power Stinger II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 170,
+      "display": 255
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Wild Stinger",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      1
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 220,
+      "display": 330
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Nu Muneo I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 170,
+      "display": 255
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Nu Muneo II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Abaddonian Muneo",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 230,
+      "display": 345
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Yian Kut-Ku Cannon I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 180,
+      "display": 270
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Yian Kut-Ku Cannon II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Super Kut-Ku Cannon",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 330
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 2,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Demon",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Grounding Fulgur I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 180,
+      "display": 270
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Fulgurblast Guardiana",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 1,
+        "capacity": 7,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Tankmage I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 180,
+      "display": 270
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Tankmage II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 300
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Tanksorcerer",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 230,
+      "display": 345
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Queen's Longfire I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 160,
+      "display": 240
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Queen's Longfire II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 190,
+      "display": 285
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Queen's Farflier",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Wyvern",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Recover",
+        "level": 1,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Gravios Howl I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 30,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 210,
+      "display": 315
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Gravios Gigahowl",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 30,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 240,
+      "display": 360
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Cluster",
+        "level": 3,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Armour",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "T\u00f6dlicher Abzug I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 180,
+      "display": 270
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Ableben Abzug",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2,
+      1
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 200,
+      "display": 300
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 1,
+        "capacity": 6,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 3,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      },
+      {
+        "type": "Slicing",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 2,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 1,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Exhaust",
+        "level": 1,
+        "capacity": 5,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Artian Sheller I",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      2,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 170,
+      "display": 255
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Artian Sheller II",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      2,
+      2,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 180,
+      "display": 270
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Greifen",
+    "description": "",
+    "weaponType": "Heavy Bowgun",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3,
+      3
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 190,
+      "display": 285
+    },
+    "element": {},
+    "skills": [],
+    "ammo": [
+      {
+        "type": "Normal",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Pierce",
+        "level": 2,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Spread",
+        "level": 2,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Sticky",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Flaming",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Water",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Thunder",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Freeze",
+        "level": 0,
+        "capacity": 3,
+        "rapid": false
+      },
+      {
+        "type": "Dragon",
+        "level": 0,
+        "capacity": 1,
+        "rapid": false
+      },
+      {
+        "type": "Poison",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Paralysis",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Sleep",
+        "level": 0,
+        "capacity": 2,
+        "rapid": false
+      },
+      {
+        "type": "Tranq",
+        "level": 1,
+        "capacity": 4,
+        "rapid": false
+      }
+    ]
+  },
+  {
+    "name": "Hope Bow I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 90,
+      "display": 108
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Hope Bow II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 100,
+      "display": 120
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Hope Bow III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 130,
+      "display": 156
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Hope Bow IV",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 160,
+      "display": 192
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Hope Bow V",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 228
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Esperanza Bow",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Albirath Bow I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      110,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 160,
+      "display": 192
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 11,
+      "display": 110
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Albirath Bow II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      130,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 13,
+      "display": 130
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Solar Spicule",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 210,
+      "display": 252
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Dragon Perforator I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 120,
+      "display": 144
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Dragon Perforator II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 160,
+      "display": 192
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Dragon Perforator III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 228
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison"
+    ]
+  },
+  {
+    "name": "True Dragon Perforator",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Rey Perkonis I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [
+      90
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 140,
+      "display": 168
+    },
+    "element": {
+      "type": "Thunder",
+      "raw": 9,
+      "display": 90
+    },
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Rey Perkonis II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      110,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {
+      "type": "Thunder",
+      "raw": 11,
+      "display": 110
+    },
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Rey Perkonis III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      130,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {
+      "type": "Thunder",
+      "raw": 13,
+      "display": 130
+    },
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Perkonis Clairbow",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {
+      "type": "Thunder",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Quematrice Arco I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [
+      70
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 100,
+      "display": 120
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 7,
+      "display": 70
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Quematrice Arco II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [
+      90
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 140,
+      "display": 168
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 9,
+      "display": 90
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Quematrice Arco III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      110,
+      2,
+      1
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 11,
+      "display": 110
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Quematrice Arco IV",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      130,
+      3,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 210,
+      "display": 252
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 13,
+      "display": 130
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Firetrail Leviora",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Nihil Bow I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      110,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 160,
+      "display": 192
+    },
+    "element": {
+      "type": "Water",
+      "raw": 11,
+      "display": 110
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Nihil Bow II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      130,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 228
+    },
+    "element": {
+      "type": "Water",
+      "raw": 13,
+      "display": 130
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Bookwilthe's Punisher",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 230,
+      "display": 276
+    },
+    "element": {
+      "type": "Water",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Windbrace Bow I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [
+      90
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 140,
+      "display": 168
+    },
+    "element": {
+      "type": "Ice",
+      "raw": 9,
+      "display": 90
+    },
+    "skills": [],
+    "coating": [
+      "Power"
+    ]
+  },
+  {
+    "name": "Windbrace Bow II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      110,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {
+      "type": "Ice",
+      "raw": 11,
+      "display": 110
+    },
+    "skills": [],
+    "coating": [
+      "Power"
+    ]
+  },
+  {
+    "name": "Windbrace Bow III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      130,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {
+      "type": "Ice",
+      "raw": 13,
+      "display": 130
+    },
+    "skills": [],
+    "coating": [
+      "Power"
+    ]
+  },
+  {
+    "name": "Windbrace Ibami",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {
+      "type": "Ice",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Power"
+    ]
+  },
+  {
+    "name": "Hunter's Bow I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 1,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 110,
+      "display": 132
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Paralysis"
+    ]
+  },
+  {
+    "name": "Hunter's Bow II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 0,
+    "damage": {
+      "raw": 130,
+      "display": 156
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Paralysis"
+    ]
+  },
+  {
+    "name": "Hunter's Bow III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Paralysis"
+    ]
+  },
+  {
+    "name": "Hunter's Bow IV",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Paralysis"
+    ]
+  },
+  {
+    "name": "Hunter's Stoutbow",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 230,
+      "display": 276
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Paralysis"
+    ]
+  },
+  {
+    "name": "Uth Khviluk I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [
+      100
+    ],
+    "affinity": -20,
+    "damage": {
+      "raw": 160,
+      "display": 192
+    },
+    "element": {
+      "type": "Water",
+      "raw": 10,
+      "display": 100
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Uth Khviluk II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      140,
+      2,
+      1
+    ],
+    "affinity": -20,
+    "damage": {
+      "raw": 190,
+      "display": 228
+    },
+    "element": {
+      "type": "Water",
+      "raw": 14,
+      "display": 140
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Uth Khviluk III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      170,
+      3,
+      2
+    ],
+    "affinity": -20,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {
+      "type": "Water",
+      "raw": 17,
+      "display": 170
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Khviluk-of-the-Waves",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      200,
+      3,
+      2
+    ],
+    "affinity": -20,
+    "damage": {
+      "raw": 240,
+      "display": 288
+    },
+    "element": {
+      "type": "Water",
+      "raw": 20,
+      "display": 200
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Wild Power Bow I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 2,
+    "slot": [],
+    "affinity": 5,
+    "damage": {
+      "raw": 120,
+      "display": 144
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison",
+      "Paralysis",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Wild Power Bow II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison",
+      "Paralysis",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Wildwood Kalifa",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Poison",
+      "Paralysis",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Scylla Fist I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 3,
+    "slot": [],
+    "affinity": 20,
+    "damage": {
+      "raw": 120,
+      "display": 144
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison",
+      "Sleep"
+    ]
+  },
+  {
+    "name": "Scylla Fist II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      2,
+      1
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 150,
+      "display": 180
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison",
+      "Sleep"
+    ]
+  },
+  {
+    "name": "Scylla Fist III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison",
+      "Sleep"
+    ]
+  },
+  {
+    "name": "Nershock",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      2
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 210,
+      "display": 252
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison",
+      "Sleep"
+    ]
+  },
+  {
+    "name": "Dosha Fearbringer I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 20,
+    "rarity": 2,
+    "slot": [],
+    "affinity": -5,
+    "damage": {
+      "raw": 140,
+      "display": 168
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Dosha Fearbringer II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 20,
+    "rarity": 4,
+    "slot": [
+      1,
+      1
+    ],
+    "affinity": -5,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Dosha Fearbringer III",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 20,
+    "rarity": 6,
+    "slot": [
+      2,
+      2
+    ],
+    "affinity": -5,
+    "damage": {
+      "raw": 210,
+      "display": 252
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Fearbringer Callistox",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 20,
+    "rarity": 8,
+    "slot": [
+      3,
+      3
+    ],
+    "affinity": -5,
+    "damage": {
+      "raw": 240,
+      "display": 288
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Power",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "G. Veldian Arcum I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      90,
+      1,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {
+      "type": "Dragon",
+      "raw": 9,
+      "display": 90
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "G. Veldian Arcum II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      120,
+      2,
+      2
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 210,
+      "display": 252
+    },
+    "element": {
+      "type": "Dragon",
+      "raw": 12,
+      "display": 120
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "G. Renowned Tristram",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      3
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 240,
+      "display": 288
+    },
+    "element": {
+      "type": "Dragon",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Exhaust"
+    ]
+  },
+  {
+    "name": "Veldian Arcum I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      160,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {
+      "type": "Dragon",
+      "raw": 16,
+      "display": 160
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Renowned Tristram",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      200,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {
+      "type": "Dragon",
+      "raw": 20,
+      "display": 200
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Dosha Griefbringer I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 4,
+    "slot": [
+      1
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Dosha Griefbringer II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      2,
+      2
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 220,
+      "display": 264
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Griefbringer Urstox",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      3,
+      3
+    ],
+    "affinity": -15,
+    "damage": {
+      "raw": 250,
+      "display": 300
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Kut-Ku Stave I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      230,
+      2,
+      1
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 23,
+      "display": 230
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Kut-Ku Stave II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      270,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 190,
+      "display": 228
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 27,
+      "display": 270
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Strange Kut-Ku Stave",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      300,
+      3,
+      2
+    ],
+    "affinity": 0,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 30,
+      "display": 300
+    },
+    "skills": [],
+    "coating": [
+      "Pierce"
+    ]
+  },
+  {
+    "name": "Blinding Fulgur I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      160,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {
+      "type": "Thunder",
+      "raw": 16,
+      "display": 160
+    },
+    "skills": [],
+    "coating": [
+      "Close-range"
+    ]
+  },
+  {
+    "name": "Fulgurbow Guardiana",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      200,
+      3,
+      2
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {
+      "type": "Thunder",
+      "raw": 20,
+      "display": 200
+    },
+    "skills": [],
+    "coating": [
+      "Close-range"
+    ]
+  },
+  {
+    "name": "Queen Blaster I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 5,
+    "slot": [
+      110,
+      2,
+      1
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 160,
+      "display": 192
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 11,
+      "display": 110
+    },
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Queen Blaster II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      130,
+      3,
+      2
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 190,
+      "display": 228
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 13,
+      "display": 130
+    },
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Queen's Melody",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": 15,
+    "damage": {
+      "raw": 210,
+      "display": 252
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Pierce",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Prominence Bow I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      160,
+      2,
+      1
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 16,
+      "display": 160
+    },
+    "skills": [],
+    "coating": [
+      "Power"
+    ]
+  },
+  {
+    "name": "Dark Filament",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      200,
+      3,
+      2
+    ],
+    "affinity": 10,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {
+      "type": "Fire",
+      "raw": 20,
+      "display": 200
+    },
+    "skills": [],
+    "coating": [
+      "Power"
+    ]
+  },
+  {
+    "name": "Entbehrung I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      120,
+      3,
+      2
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {
+      "type": "Dragon",
+      "raw": 12,
+      "display": 120
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Verzweiflung",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": 20,
+    "damage": {
+      "raw": 210,
+      "display": 252
+    },
+    "element": {
+      "type": "Dragon",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Power",
+      "Blast"
+    ]
+  },
+  {
+    "name": "Blan Sharanga I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      110,
+      2,
+      1
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 200,
+      "display": 240
+    },
+    "element": {
+      "type": "Ice",
+      "raw": 11,
+      "display": 110
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Singha Sharanga",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      150,
+      3,
+      2
+    ],
+    "affinity": -10,
+    "damage": {
+      "raw": 230,
+      "display": 276
+    },
+    "element": {
+      "type": "Ice",
+      "raw": 15,
+      "display": 150
+    },
+    "skills": [],
+    "coating": [
+      "Close-range",
+      "Poison"
+    ]
+  },
+  {
+    "name": "Artian Sight I",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 6,
+    "slot": [
+      180,
+      2,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 170,
+      "display": 204
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range"
+    ]
+  },
+  {
+    "name": "Artian Sight II",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 7,
+    "slot": [
+      180,
+      2,
+      2
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 180,
+      "display": 216
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range"
+    ]
+  },
+  {
+    "name": "Angelbein",
+    "description": "",
+    "weaponType": "Bow",
+    "defense": 0,
+    "rarity": 8,
+    "slot": [
+      210,
+      3,
+      3
+    ],
+    "affinity": 5,
+    "damage": {
+      "raw": 190,
+      "display": 228
+    },
+    "element": {},
+    "skills": [],
+    "coating": [
+      "Close-range"
+    ]
   }
 ]

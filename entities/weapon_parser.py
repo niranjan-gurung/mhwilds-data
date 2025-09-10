@@ -32,15 +32,15 @@ class BaseWeapon(ABC):
     pass
 
   @abstractmethod
-  def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     """Parse a weapon from table row data"""
     pass
 
-  def create_weapon(self, cells: list) -> dict[str, Any]:
+  def create_weapon(self, cells: list, headers: list) -> dict[str, Any]:
     weapon = self.get_base_weapon_structure()
     weapon.update(self.get_weapon_specific_fields())
 
-    parsed_data = self.parse_weapon_from_row(cells)
+    parsed_data = self.parse_weapon_from_row(cells, headers)
     weapon.update(parsed_data)
 
     return weapon
@@ -100,14 +100,14 @@ class MeleeWeaponParser(BaseWeapon):
       return {}
 
 class GenericMeleeParser(MeleeWeaponParser):
-  def parse_weapon_from_row(self, cells: list) -> dict[str, Any]:
+  def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     return self.parse_common_melee_fields(cells)
   
 class RangedWeaponParser(BaseWeapon):
   def get_weapon_specific_fields(self) -> dict[str, Any]:
     return {}
   
-  def parse_common_ranged_fields(self, cells: list) -> dict[str, Any]:
+  def parse_common_ranged_fields(self, cells: list, headers: list) -> dict[str, Any]:
     def get_cell_text(index):
       return cells[index].get_text(strip=True)
     
@@ -123,8 +123,23 @@ class RangedWeaponParser(BaseWeapon):
         'damage': {
           'raw': int(get_cell_text(5)),
           'display': int(get_cell_text(4))
-        }
+        },
+        'element':
+          self._parse_element(get_cell_text(8), get_cell_text(9)) 
+          if headers[9] == 'Element Attack'
+          else {}
       }
+    
+  # helper methods
+  def _parse_element(self, element: str, value: str) -> dict:
+    if element and element != '-':
+      return {
+        'type': element,
+        'raw': round(int(value) / 10),
+        'display': int(value)
+      }
+    else:
+      return {}
   
   def _parse_ammo_data(self, cells: list) -> list[dict]:
     def get_cell_text(index):
@@ -157,3 +172,11 @@ class RangedWeaponParser(BaseWeapon):
         continue
 
     return ammos
+  
+  def _parse_coating_data(self, cells: list) -> list[dict]:
+    def get_cell_text(index):
+      return cells[index].get_text(strip=True)
+    
+    coatings_raw = get_cell_text(16)
+    coatings = [coating.replace('Coating', '').strip() for coating in coatings_raw.split(',')]
+    return coatings

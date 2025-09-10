@@ -32,7 +32,9 @@ from entities.weapons import (
   ChargeBlade,
   SwitchAxe,
   InsectGlaive,
-  LightBowgun
+  LightBowgun,
+  HeavyBowgun,
+  Bow
 )
 
 WEAPON_TYPES = [
@@ -65,8 +67,8 @@ class WeaponParserFactory:
     
     # ranged weapons
     'Light Bowgun': LightBowgun,
-    #'Heavy Bowgun': HeavyBowgun,
-    #'Bow': Bow,
+    'Heavy Bowgun': HeavyBowgun,
+    'Bow': Bow,
     
     # generic melee weapons (no special fields beyond sharpness)
     'Great Sword': GenericMeleeParser,
@@ -236,19 +238,27 @@ def parse_weapon(soup: BeautifulSoup, type: str) -> list[dict]:
   weapons = []
   
   parser = WeaponParserFactory.get_parser(type)
+  
+  table = soup.find('table')
+  if not table:
+    print(f'weapons table not found for {type}') 
+    
+  # skip SnS - website doesn't contain sns table data atm.
+  thead = table.find('thead')
+  if thead:
+    headers = [th.get_text(strip=True) for th in thead.find_all('th')]
 
-  table = soup.find('tbody')
-  rows = table.find_all('tr')
+  tbody = soup.find('tbody')
+  rows = tbody.find_all('tr')
 
   for row in rows:
     cells = row.find_all('td')
 
     try:
-      weapon = parser.create_weapon(cells)
+      weapon = parser.create_weapon(cells, headers)
       weapons.append(weapon)
-
       print(f'Successfully parsed {len(weapons)} {type} weapons')
-
+      
     except Exception as e:
       print(f'Error parsing weapons: {e}')
 
