@@ -2,6 +2,7 @@ from armour_data import post_armour_data
 from skill_data import post_skill_data
 from charm_data import post_charm_data
 from decoration_data import post_deco_data
+from weapon_data import post_weapon_data
 import sys
 
 """Display the main menu options"""
@@ -13,6 +14,7 @@ def display_menu():
   print("2. Post Armour Data")
   print("3. Post Charms Data")
   print("4. Post Decorations Data")
+  print("5. Post Weapons Data")
   print("0. Exit")
   print("-"*50)
 
@@ -21,7 +23,7 @@ def get_user_choice():
   while True:
     try:
       choice = input("Enter your choice (0-4): ").strip()
-      if choice in ['0', '1', '2', '3', '4']:
+      if choice in ['0', '1', '2', '3', '4', '5']:
         return choice
       else:
         print("Invalid choice. Please enter a number between 0-4.")
@@ -64,15 +66,21 @@ def execute_choice(choice):
       return
     print("\nPosting Decorations Data...")
     success = post_deco_data()
+  elif choice == '5':
+    if not confirm_action("post Weapons data"):
+      print("Operation cancelled.")
+      return
+    print("\nPosting Weapons Data...")
+    success = post_weapon_data()
   elif choice == '0':
     print("\nGoodbye!")
     sys.exit(0)
   
   # show result
   if success:
-    print("✓ Operation completed successfully!")
+    print("Operation completed successfully!")
   else:
-    print("✗ Operation failed. Check the logs above for details.")
+    print("Operation failed. Check the logs above for details.")
 
 """Main application loop"""
 def main():

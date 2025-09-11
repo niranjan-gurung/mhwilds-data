@@ -315,10 +315,6 @@ def get_weapon_data() -> list[dict]:
     print(f'Error in get_weapon_data: {e}')
     return []  
 
-# testing
-weapon_data = get_weapon_data()
-dump_json('weapons', weapon_data)
-
 """
 Posts the scraped weapon data to the API
 """
