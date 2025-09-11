@@ -18,7 +18,7 @@ class Gunlance(MeleeWeaponParser):
 
     def get_cell_text(index):
       return cells[index].get_text(strip=True)
-    
+
     parsed_data['shell'] = {
       'type': get_cell_text(25),
       'power': int(get_cell_text(26))
@@ -42,7 +42,7 @@ class ChargeBlade(MeleeWeaponParser):
     
     # value type is optional for chargeblade (needs to be defined in API model/dto)
     parsed_data['phial'] = {
-      'type': get_cell_text(25)
+      'type': get_cell_text(25).removesuffix(' Phial')
     }
     return parsed_data
 
@@ -62,7 +62,7 @@ class SwitchAxe(MeleeWeaponParser):
       return cells[index].get_text(strip=True)
     
     parsed_data['phial'] = {
-      'type': get_cell_text(25),
+      'type': get_cell_text(25).removesuffix(' Phial'),
       'value': None if get_cell_text(26) == '' else int(get_cell_text(26))
     }
     return parsed_data
@@ -100,11 +100,11 @@ class LightBowgun(RangedWeaponParser):
   def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     parsed_data = self.parse_common_ranged_fields(cells, headers)
 
-    def get_cell_text(index):
+    def get_cell_text(index) -> str:
       return cells[index].get_text(strip=True)
     
     parsed_data['ammo'] = self._parse_ammo_data(cells)
-    parsed_data['specialAmmo'] = get_cell_text(18)
+    parsed_data['specialAmmo'] = get_cell_text(18).replace('?', '')
     return parsed_data
   
 """

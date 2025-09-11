@@ -5,7 +5,7 @@ import config
 """
 Builds a dictionary mapping skill names to their IDs from the API
 """
-def build_skills_lookup(api_base_url: str = config.API_BASE_URL) -> dict:
+def build_skills_lookup(api_base_url: str = config.API_BASE_URL) -> dict[str, int]:
   skills_lookup = {}
   try:
     response = requests.get(

@@ -17,10 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.webdriver import WebDriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-from utils.common import (
-  build_skills_lookup, 
-  get_skill_rank_data
-)
+from utils.common import build_skills_lookup
 
 from entities.weapon_parser import (
   BaseWeapon, 
@@ -84,12 +81,6 @@ class WeaponParserFactory:
     """Get appropriate parser for weapon type"""
     parser_class = cls._parsers.get(weapon_type, GenericMeleeParser)
     return parser_class(weapon_type)
-  
-  @classmethod
-  def is_ranged_weapon(cls, weapon_type: str) -> bool:
-    """Check if weapon type is ranged"""
-    ranged_weapons = ['Light Bowgun', 'Heavy Bowgun', 'Bow']
-    return weapon_type in ranged_weapons
 
 """
 Return potential path for chrome exe,
@@ -234,7 +225,7 @@ def load_weapon_type_specific_page(driver: WebDriver, url: str) -> Optional[Beau
     print(f'Error scraping with Selenium: {e}')
     return None
 
-def parse_weapon(soup: BeautifulSoup, type: str) -> list[dict]:
+def parse_weapon(soup: BeautifulSoup, type: str, skills_lookup: dict[str, int]) -> list[dict]:
   weapons = []
   
   parser = WeaponParserFactory.get_parser(type)
@@ -255,7 +246,7 @@ def parse_weapon(soup: BeautifulSoup, type: str) -> list[dict]:
     cells = row.find_all('td')
 
     try:
-      weapon = parser.create_weapon(cells, headers)
+      weapon = parser.create_weapon(cells, headers, skills_lookup)
       weapons.append(weapon)
       print(f'Successfully parsed {len(weapons)} {type} weapons')
       
@@ -269,11 +260,11 @@ Scrapes weapon data from the website (url2) and builds weapon object,
 matches weapon model/schema from API
 """
 def get_weapon_data() -> list[dict]:
-  # print('building skills lookup...')
-  # skills_lookup = build_skills_lookup()
-  # if not skills_lookup:
-  #   print("Failed to build skills lookup. Check API connection.")
-  #   return []
+  print('building skills lookup...')
+  skills_lookup = build_skills_lookup()
+  if not skills_lookup:
+    print("Failed to build skills lookup. Check API connection.")
+    return []
   
   # navigate to the weapon page
   print('finding weapons page...')
@@ -303,7 +294,7 @@ def get_weapon_data() -> list[dict]:
 
         if soup:
           # get all weapons from its specific type page 
-          weapon_types = parse_weapon(soup, weapon_type)
+          weapon_types = parse_weapon(soup, weapon_type, skills_lookup)
 
           # concat all weapons (including all types) into a single list
           weapons.extend(weapon_types)

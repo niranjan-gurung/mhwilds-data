@@ -1,8 +1,9 @@
 from typing import Any
 from abc import ABC, abstractmethod
+from entities.skill_parser import SkillParserMixin
 import re
 
-class BaseWeapon(ABC):
+class BaseWeapon(ABC, SkillParserMixin):
   def __init__(self, weapon_type: str):
     self.weapon_type = weapon_type
   
@@ -36,12 +37,14 @@ class BaseWeapon(ABC):
     """Parse a weapon from table row data"""
     pass
 
-  def create_weapon(self, cells: list, headers: list) -> dict[str, Any]:
+  def create_weapon(self, cells: list, headers: list, skills_lookup: dict[str, int]) -> dict[str, Any]:
     weapon = self.get_base_weapon_structure()
     weapon.update(self.get_weapon_specific_fields())
 
     parsed_data = self.parse_weapon_from_row(cells, headers)
     weapon.update(parsed_data)
+
+    weapon['skills'] = self.parse_skills(cells, headers, skills_lookup)
 
     return weapon
 
@@ -178,5 +181,12 @@ class RangedWeaponParser(BaseWeapon):
       return cells[index].get_text(strip=True)
     
     coatings_raw = get_cell_text(16)
-    coatings = [coating.replace('Coating', '').strip() for coating in coatings_raw.split(',')]
+
+    # split comma based string
+    # remove 'Coating' suffix
+    # camelcase hyphen based words 
+    coatings = [''.join(word.capitalize() 
+                for word in coating.replace('Coating', '').strip().split('-')) 
+                for coating in coatings_raw.split(',')]
+    
     return coatings
