@@ -5,7 +5,7 @@ import re
 
 class BaseWeapon(ABC, SkillParserMixin):
   def __init__(self, weapon_type: str):
-    self.weapon_type = weapon_type
+    self.weapon_type = weapon_type.replace(' ', '')
   
   """ 
   Base structure for all weapons
@@ -96,8 +96,10 @@ class MeleeWeaponParser(BaseWeapon):
     if element and element != '-':
       return {
         'type': element,
-        'raw': round(int(value) / 10),
-        'display': int(value)
+        'damage': {
+          'raw': round(int(value) / 10),
+          'display': int(value)
+        }
       }
     else:
       return {}
@@ -138,8 +140,10 @@ class RangedWeaponParser(BaseWeapon):
     if element and element != '-':
       return {
         'type': element,
-        'raw': round(int(value) / 10),
-        'display': int(value)
+        'damage': {
+          'raw': round(int(value) / 10),
+          'display': int(value)
+        }
       }
     else:
       return {}

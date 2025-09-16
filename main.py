@@ -22,11 +22,11 @@ def display_menu():
 def get_user_choice():
   while True:
     try:
-      choice = input("Enter your choice (0-4): ").strip()
+      choice = input("Enter your choice (0-5): ").strip()
       if choice in ['0', '1', '2', '3', '4', '5']:
         return choice
       else:
-        print("Invalid choice. Please enter a number between 0-4.")
+        print("Invalid choice. Please enter a number between 0-5.")
     except KeyboardInterrupt:
       print("\n\nExiting...")
       sys.exit(0)

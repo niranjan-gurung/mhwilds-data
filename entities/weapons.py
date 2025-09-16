@@ -31,7 +31,15 @@ Parse chargeblade specific data from table row
 class ChargeBlade(MeleeWeaponParser):
   def get_weapon_specific_fields(self) -> dict[str, Any]:
     base_fields = super().get_weapon_specific_fields()
-    base_fields['phial'] = ''
+    base_fields.update({
+      'phial': {
+        'type': '',
+        'damage': {
+          'raw': 0,
+          'display': 0
+        }
+      }
+    })
     return base_fields
   
   def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
@@ -40,9 +48,10 @@ class ChargeBlade(MeleeWeaponParser):
     def get_cell_text(index):
       return cells[index].get_text(strip=True)
     
-    # value type is optional for chargeblade (needs to be defined in API model/dto)
+    # damage type is optional for chargeblade (needs to be defined in API model/dto)
     parsed_data['phial'] = {
-      'type': get_cell_text(25).removesuffix(' Phial')
+      'type': get_cell_text(25).removesuffix(' Phial'),
+      'damage': None
     }
     return parsed_data
 
@@ -52,7 +61,15 @@ Parse switchaxe specific data from table row
 class SwitchAxe(MeleeWeaponParser):
   def get_weapon_specific_fields(self) -> dict[str, Any]:
     base_fields = super().get_weapon_specific_fields()
-    base_fields['phial'] = ''
+    base_fields.update({
+      'phial': {
+        'type': '',
+        'damage': {
+          'raw': 0,
+          'display': 0
+        }
+      }
+    })
     return base_fields
   
   def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
@@ -61,9 +78,15 @@ class SwitchAxe(MeleeWeaponParser):
     def get_cell_text(index):
       return cells[index].get_text(strip=True)
     
+    phial_type = 'Exhaust' if get_cell_text(25).removesuffix(' Phial') == 'Fatigue' else get_cell_text(25).removesuffix(' Phial')
+    phial_damage = get_cell_text(26)
+
     parsed_data['phial'] = {
-      'type': get_cell_text(25).removesuffix(' Phial'),
-      'value': None if get_cell_text(26) == '' else int(get_cell_text(26))
+      'type': phial_type,
+      'damage': {
+        'raw': round(int(phial_damage) / 10),
+        'display': int(phial_damage)
+      } if phial_damage != '' else None
     }
     return parsed_data
 
@@ -127,10 +150,10 @@ Parse bow specific data from table row
 class Bow(RangedWeaponParser):
   def get_weapon_specific_fields(self) -> dict[str, Any]:
     base_fields = super().get_weapon_specific_fields()
-    base_fields['coating'] = []
+    base_fields['coatings'] = []
     return base_fields
   
   def parse_weapon_from_row(self, cells: list, headers: list) -> dict[str, Any]:
     parsed_data = self.parse_common_ranged_fields(cells, headers)
-    parsed_data['coating'] = self._parse_coating_data(cells)
+    parsed_data['coatings'] = self._parse_coating_data(cells)
     return parsed_data
