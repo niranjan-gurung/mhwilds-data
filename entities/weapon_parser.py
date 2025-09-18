@@ -116,13 +116,18 @@ class RangedWeaponParser(BaseWeapon):
     def get_cell_text(index):
       return cells[index].get_text(strip=True)
     
+    # bows slot indexes are different different than lbg and hbg (+1)
+    # correct indices are chosen based on an additional column specific to bow (Element Attack): 
+    is_bow: bool = headers[9] == 'Element Attack'
+    incides = [10, 11, 12] if is_bow else [9, 10, 11]
+
     return {
         'name': get_cell_text(0),
         'defense': 0 if get_cell_text(7) == '' else int(get_cell_text(7)),
         'rarity': int(get_cell_text(3)),
         # if slot column is empty, then don't append anything into slot list
         'slot': [
-          int(val) for i in [9, 10, 11] if (val := get_cell_text(i)) != ''
+          int(val) for i in incides if (val := get_cell_text(i)) != ''
         ],
         'affinity': 0 if get_cell_text(6) == '' else int(round(float(get_cell_text(6)) * 100)),
         'damage': {
@@ -131,7 +136,7 @@ class RangedWeaponParser(BaseWeapon):
         },
         'element':
           self._parse_element(get_cell_text(8), get_cell_text(9)) 
-          if headers[9] == 'Element Attack'
+          if is_bow
           else {}
       }
     

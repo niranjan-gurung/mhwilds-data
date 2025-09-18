@@ -4,6 +4,7 @@ A simple and dirty web scraper that grabs game data such as: armours, weapons, s
 
 Websites used as the data source: 
 https://mhwilds.kiranico.com/
+<br>
 https://monsterhunterw.com/
 
 TODO:
